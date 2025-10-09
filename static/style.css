@@ -1,24 +1,24 @@
-/* =========================
-🌟 GLOBAL STYLING & TYPOGRAPHY
-========================= */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
 
+/* =========================
+✨ GLOBAL STYLING
+========================= */
 * {
   box-sizing: border-box;
   transition: all 0.3s ease;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Manrope', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   background: linear-gradient(120deg, #f0faff, #e0f7ff, #e8f0ff);
   background-size: 300% 300%;
   animation: bgFlow 10s ease infinite;
-  color: #1a1a1a;
+  color: #222;
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
   letter-spacing: 0.2px;
-  line-height: 1.6;
 }
 
 @keyframes bgFlow {
@@ -32,24 +32,24 @@ body {
 ========================= */
 .card, .container {
   background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(14px);
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 120, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 28px 36px;
-  margin: 20px auto;
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 120, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 30px 40px;
+  margin: 30px auto;
   width: 90%;
-  max-width: 900px;
+  max-width: 950px;
   animation: fadeIn 0.8s ease-out;
 }
 
 .card:hover, .container:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 35px rgba(0, 120, 255, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 120, 255, 0.25);
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(10px); }
+  0% { opacity: 0; transform: translateY(12px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
@@ -58,110 +58,119 @@ body {
 ========================= */
 .heading, h2 {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  font-size: 1.9rem;
-  letter-spacing: 0.5px;
+  color: #0078ff;
+  letter-spacing: 0.8px;
   background: linear-gradient(90deg, #0078ff, #00c2ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-  animation: glow 2s infinite alternate;
+  text-shadow: 0 0 10px rgba(0, 180, 255, 0.15);
+  animation: glow 2.5s infinite alternate;
 }
 
 @keyframes glow {
-  0% { text-shadow: 0 0 10px rgba(0, 200, 255, 0.3); }
-  100% { text-shadow: 0 0 25px rgba(0, 200, 255, 0.7); }
+  0% { text-shadow: 0 0 10px rgba(0, 200, 255, 0.2); }
+  100% { text-shadow: 0 0 25px rgba(0, 200, 255, 0.6); }
 }
 
 /* =========================
-📋 LABELS & INPUTS
+🧭 NAVBAR / LIGHT BUTTON
+========================= */
+.btn-light, .btn-nav {
+  background: linear-gradient(90deg, #ffffff, #ebf7ff);
+  color: #0078ff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 5px 12px rgba(0, 120, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover, .btn-nav:hover {
+  background: linear-gradient(90deg, #00aaff, #0078ff);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 120, 255, 0.35);
+}
+
+/* =========================
+📄 FORM INPUTS
 ========================= */
 label {
-  font-family: 'Manrope', sans-serif;
   font-weight: 600;
   color: #004f8a;
-  letter-spacing: 0.3px;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.4px;
+  margin-bottom: 5px;
+  font-size: 0.96rem;
 }
 
 input, select {
-  font-family: 'Poppins', sans-serif;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border: 1.5px solid #b8e1ff;
   border-radius: 10px;
-  padding: 10px;
-  color: #004f8a;
+  padding: 10px 12px;
+  color: #003f7d;
   font-weight: 500;
   font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 120, 255, 0.08);
 }
 
 input:focus, select:focus {
   outline: none;
   border-color: #0078ff;
-  box-shadow: 0 0 10px rgba(0, 120, 255, 0.35);
+  box-shadow: 0 0 10px rgba(0, 120, 255, 0.3);
   transform: scale(1.02);
 }
 
 /* =========================
-🚀 BUTTONS
+🚀 PRIMARY BUTTON
 ========================= */
 .btn-primary {
   background: linear-gradient(90deg, #0078ff, #00c2ff);
   color: #fff;
   border: none;
   border-radius: 12px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  padding: 12px 25px;
   font-size: 1.05rem;
-  box-shadow: 0 8px 25px rgba(0, 120, 255, 0.25);
   letter-spacing: 0.3px;
+  padding: 12px 28px;
+  box-shadow: 0 8px 25px rgba(0, 120, 255, 0.25);
+  font-family: 'Outfit', sans-serif;
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
   background: linear-gradient(90deg, #00c2ff, #0078ff);
-  transform: translateY(-3px) scale(1.03);
+  transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(0, 120, 255, 0.4);
-}
-
-.btn-light {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  background-color: #fff;
-  color: #0078ff;
-  border-radius: 8px;
-  box-shadow: 0 5px 12px rgba(0, 120, 255, 0.15);
-}
-
-.btn-light:hover {
-  background-color: #0078ff;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(0, 120, 255, 0.3);
 }
 
 /* =========================
 💬 RESULT BOX
 ========================= */
 .result-box {
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 12px;
-  border: 1px solid rgba(0, 120, 255, 0.2);
   text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 120, 255, 0.2);
   color: #0078ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 25px;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1.25rem;
-  box-shadow: 0 6px 25px rgba(0, 120, 255, 0.2);
-  animation: fadeUp 0.8s ease;
+  box-shadow: 0 5px 20px rgba(0, 120, 255, 0.25);
+  animation: popUp 0.7s ease;
 }
 
-@keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(10px); }
-  100% { opacity: 1; transform: translateY(0); }
+@keyframes popUp {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 /* =========================
@@ -169,9 +178,9 @@ input:focus, select:focus {
 ========================= */
 .table {
   background: white;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 th {
@@ -180,17 +189,16 @@ th {
   text-transform: uppercase;
   font-weight: 600;
   border: none;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 td {
   color: #004f8a;
   font-weight: 500;
-  letter-spacing: 0.2px;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f8ff;
+  background-color: #f3f9ff;
 }
 
 tr:hover {
@@ -199,46 +207,73 @@ tr:hover {
 }
 
 /* =========================
-📈 DASHBOARD SUMMARY CARDS
+📈 STATS & CHART
 ========================= */
 .summary-box {
   background: linear-gradient(135deg, #ffffff, #eaf6ff);
-  border-radius: 14px;
   color: #0078ff;
+  border-radius: 14px;
   padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 120, 255, 0.15);
-  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 6px 20px rgba(0, 120, 255, 0.15);
   transition: 0.3s ease;
 }
 
 .summary-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0, 120, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 120, 255, 0.25);
 }
 
 .summary-box h5 {
+  font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.3px;
-  color: #004f8a;
+  letter-spacing: 0.4px;
 }
 
 .summary-box p {
-  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
+  font-size: 1.8rem;
   color: #0078ff;
 }
 
 /* =========================
-🌟 RESPONSIVE
+🌟 SCROLLBAR
+========================= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00c2ff, #0078ff);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* =========================
+📱 RESPONSIVE DESIGN
 ========================= */
 @media (max-width: 768px) {
-  .heading {
-    font-size: 1.6rem;
+  .card, .container {
+    width: 95%;
+    padding: 20px;
   }
+
   .btn-primary {
     width: 100%;
   }
-  label {
+
+  .summary-box {
+    margin-bottom: 15px;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  th, td {
     font-size: 0.9rem;
   }
 }

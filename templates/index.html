@@ -5,78 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Car Service Time Prediction</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      padding: 25px 35px;
-      width: 95%;
-      max-width: 900px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .heading {
-      text-align: center;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 15px;
-    }
-
-    select, input {
-      background-color: rgba(255, 255, 255, 0.2);
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-    }
-
-    select:focus, input:focus {
-      outline: none;
-      box-shadow: 0 0 5px #4ca1af;
-    }
-
-    label {
-      font-weight: 500;
-      color: #dceef3;
-    }
-
-    .btn-primary {
-      background: linear-gradient(90deg, #36d1dc, #5b86e5);
-      border: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn-primary:hover {
-      transform: scale(1.05);
-      background: linear-gradient(90deg, #5b86e5, #36d1dc);
-    }
-
-    .btn-light {
-      background-color: #fff;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .result-box {
-      text-align: center;
-      margin-top: 20px;
-      background: rgba(255, 255, 255, 0.2);
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 1.3rem;
-    }
-  </style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
