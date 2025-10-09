@@ -2,27 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Service Analytics Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Car Service Prediction</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #1e272e;
+            color: #fff;
+            padding-top: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+        table {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .summary-box {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+        a.btn {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-<body class="bg-light">
-<div class="container mt-4">
-    <h2 class="text-center text-success">📊 Service Time Dashboard</h2>
-    <p class="text-center text-muted">Track average times and prediction trends</p>
-    <hr>
+<body>
+    <div class="container">
+        <h2>📊 Dashboard - Car Service Analysis</h2>
+        <div class="text-center">
+            <a href="/" class="btn btn-light text-dark fw-bold">← Back to Home</a>
+        </div>
 
-    <div class="text-center">
-        <h4>Average Predicted Time: <strong>{{ avg_time }}</strong> hours</h4>
-        <h5>Total Predictions: <strong>{{ total_preds }}</strong></h5>
-    </div>
+        {% if msg %}
+            <p class="text-center text-warning mt-3">{{ msg }}</p>
+        {% else %}
+        <div class="row text-center mb-4">
+            <div class="col-md-4 summary-box">
+                <h5>Total Records</h5>
+                <p class="display-6">{{ total_records }}</p>
+            </div>
+            <div class="col-md-4 summary-box">
+                <h5>Average Service Time</h5>
+                <p class="display-6">{{ avg_time }} hrs</p>
+            </div>
+            <div class="col-md-4 summary-box">
+                <h5>Most Common Car</h5>
+                <p class="display-6">{{ common_car }}</p>
+            </div>
+        </div>
 
-    <div class="mt-4 text-center">
-        <img src="{{ image_path }}" class="img-fluid rounded shadow">
-    </div>
+        <div class="text-center mb-4">
+            <img src="{{ url_for('static', filename='dashboard_chart.png') }}" alt="Chart" class="img-fluid rounded shadow">
+        </div>
 
-    <div class="text-center mt-4">
-        <a href="/" class="btn btn-primary">🔙 Back to Home</a>
+        <h5>Recent Predictions</h5>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Car Name</th>
+                        <th>Service Type</th>
+                        <th>Engine Type</th>
+                        <th>Condition</th>
+                        <th>Predicted Time (hrs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in tables %}
+                    <tr>
+                        <td>{{ row[0] }}</td>
+                        <td>{{ row[1] }}</td>
+                        <td>{{ row[2] }}</td>
+                        <td>{{ row[3] }}</td>
+                        <td>{{ row[-1] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
     </div>
-</div>
 </body>
 </html>

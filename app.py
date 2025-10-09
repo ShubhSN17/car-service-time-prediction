@@ -143,24 +143,44 @@ def predict():
 
 @app.route('/dashboard')
 def dashboard():
-    df = pd.read_csv(record_file)
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import os
 
-    avg_time = df['Predicted Time (hours)'].mean()
-    total_preds = len(df)
+    record_file = 'predicted_records.csv'  # same file used for logging
 
-    plt.figure(figsize=(6, 4))
-    plt.hist(df['Predicted Time (hours)'], bins=10, color='skyblue', edgecolor='black')
-    plt.title("Distribution of Predicted Service Times")
-    plt.xlabel("Service Time (hours)")
-    plt.ylabel("Frequency")
+    if not os.path.exists(record_file):
+        return render_template('dashboard.html', 
+                               tables=None, 
+                               msg="No records found yet. Predict some results first!")
+
+    # Read prediction records
+    df = pd.read_csv(record_file, header=None, names=[
+        "Car Name", "Service Type", "Engine Type", "Condition",
+        "Spare Parts", "Turbocharged", "Check Engine Light",
+        "Mileage (km)", "Car Age (years)", "Engine Capacity (cc)",
+        "Engine Wear", "Oil Quality", "Temperature (°C)",
+        "Months Since Last Service", "Predicted Time (hours)"
+    ])
+
+    # Summary Stats
+    avg_time = round(df["Predicted Time (hours)"].mean(), 2)
+    common_car = df["Car Name"].mode()[0]
+    total_records = len(df)
+
+    # Plot: Average Service Time by Car Name
+    plt.figure(figsize=(8,4))
+    car_avg = df.groupby("Car Name")["Predicted Time (hours)"].mean().sort_values()
+    car_avg.plot(kind='bar', color='skyblue', edgecolor='black')
+    plt.title("Average Service Time by Car")
+    plt.ylabel("Hours")
     plt.tight_layout()
-    plt.savefig("static/service_time_chart.png")
+    chart_path = "static/dashboard_chart.png"
+    plt.savefig(chart_path)
+    plt.close()
 
-    return render_template('dashboard.html',
-                           avg_time=round(avg_time, 2),
-                           total_preds=total_preds,
-                           image_path="static/service_time_chart.png")
-
+    # Pass data to HTML
+    return render_template("dashboard.html",tables=df.tail(10).values.tolist(),avg_time=avg_time,common_car=common_car,total_records=total_records,chart=chart_path)
 
 if __name__ == '__main__':
     app.run(debug=True)
