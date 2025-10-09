@@ -3,6 +3,8 @@ import joblib
 import numpy as np
 import pandas as pd
 import os
+import matplotlib
+matplotlib.use('Agg')  # ✅ Prevent GUI crash on macOS
 import matplotlib.pyplot as plt
 
 app = Flask(__name__)
@@ -16,7 +18,7 @@ encoder_service = joblib.load("model/service_type_encoder.pkl")
 encoder_engine = joblib.load("model/engine_type_encoder.pkl")
 
 # File to store prediction logs
-record_file = "records.csv"
+record_file = "predicted_records.csv"
 if not os.path.exists(record_file):
     pd.DataFrame(columns=[
         "Car Name", "Service Type", "Engine Type", "Condition",
@@ -47,7 +49,6 @@ def predict():
             return default
 
     def to_int(val, default=0):
-        # accepts "on", "true", "1", etc.
         if isinstance(val, str) and val.lower() in ('on','true','yes'):
             return 1
         try:
@@ -62,114 +63,93 @@ def predict():
     workload_queue = to_float(request.form.get('workload_queue', 0))
     mechanic_experience_years = to_float(request.form.get('mechanic_experience_years', 0))
 
-    # condition & parts availability were mapped during training: map them the same way
-    condition_raw = request.form.get('condition_of_vehicle', 'Average')  # e.g. "Good"/"Average"/"Poor"
+    condition_raw = request.form.get('condition_of_vehicle', 'Average')
     cond_map = {'Poor': 0, 'Average': 1, 'Good': 2}
     condition = cond_map.get(condition_raw, to_int(condition_raw, 1))
 
-    parts_raw = request.form.get('availability_of_spare_parts', 'Available')  # e.g. "Available"/"Limited"/"Not Available"
+    parts_raw = request.form.get('availability_of_spare_parts', 'Available')
     parts_map = {'Not Available': 0, 'Limited': 1, 'Available': 2}
     parts_avail = parts_map.get(parts_raw, to_int(parts_raw, 2))
 
     engine_capacity = to_float(request.form.get('engine_capacity', 0))
     num_cylinders = to_int(request.form.get('num_cylinders', 0))
-    turbo = to_int(request.form.get('turbo', 0))                 # 1 or 0
+    turbo = to_int(request.form.get('turbo', 0))
     battery_kwh = to_float(request.form.get('battery_kwh', 0))
     oil_quality = to_float(request.form.get('oil_quality', 0))
-    check_light = to_int(request.form.get('check_engine_light', 0))  # 1 or 0
+    check_light = to_int(request.form.get('check_engine_light', 0))
     temp = to_float(request.form.get('avg_engine_temp_c', 0))
     service_months = to_float(request.form.get('last_service_months_ago', 0))
     engine_wear = to_float(request.form.get('engine_wear_score', 0))
 
-    # --- Build numeric array in EXACT same order as training X_df.columns
+    # --- Build numeric array
     numeric_data = np.array([[
-        car_age,
-        mileage,
-        parts_to_replace,
-        workload_queue,
-        mechanic_experience_years,
-        condition,
-        parts_avail,
-        engine_capacity,
-        num_cylinders,
-        turbo,
-        battery_kwh,
-        oil_quality,
-        check_light,
-        temp,
-        service_months,
-        engine_wear
-    ]], dtype=float)  # shape (1, 16)
+        car_age, mileage, parts_to_replace, workload_queue,
+        mechanic_experience_years, condition, parts_avail,
+        engine_capacity, num_cylinders, turbo, battery_kwh,
+        oil_quality, check_light, temp, service_months, engine_wear
+    ]], dtype=float)
 
-    # --- encode categorical using saved encoders
-    car_encoded = encoder_car.transform([[car_name]])        # shape (1, n_car)
-    service_encoded = encoder_service.transform([[service_type]])  # shape (1, n_service)
-    engine_encoded = encoder_engine.transform([[engine_type]])     # shape (1, n_engine)
+    # --- Encode categoricals
+    car_encoded = encoder_car.transform([[car_name]])
+    service_encoded = encoder_service.transform([[service_type]])
+    engine_encoded = encoder_engine.transform([[engine_type]])
 
-    # --- concatenate in same order as training
     X_input = np.concatenate([numeric_data, car_encoded, service_encoded, engine_encoded], axis=1)
 
-    # --- DEBUG: check shapes (remove or comment out in production)
-    print("DEBUG shapes -> numeric:", numeric_data.shape, 
-          "car:", car_encoded.shape, 
-          "service:", service_encoded.shape, 
-          "engine:", engine_encoded.shape,
-          "TOTAL:", X_input.shape, 
-          "model expects:", model.n_features_in_)
+        # --- Predict (improved with realistic minimums)
+    raw_pred = model.predict(X_input)[0]
 
-    # sanity check (optional): ensure feature count matches model expectation
-    if X_input.shape[1] != model.n_features_in_:
-        # helpful debug message printed to console — do not use exception handling yet
-        return render_template('index.html', prediction_text=f"Feature mismatch: input {X_input.shape[1]} vs model {model.n_features_in_}")
+    # Context-based minimum time by service type
+    service_min = {
+        "Basic": 0.5,
+        "Full": 2.0,
+        "Engine Repair": 5.0,
+        "Transmission": 4.0,
+        "Electrical": 1.5,
+        "Painting": 3.0
+    }
 
-    # --- predict
-    prediction = model.predict(X_input)[0]
+    MIN_SERVICE_TIME = service_min.get(service_type, 1.0)
+    prediction = max(raw_pred, MIN_SERVICE_TIME)
 
-    # --- log the record (as you did before)
-    new_row = pd.DataFrame([[
-        car_name, service_type, engine_type, condition, parts_avail,
-        turbo, check_light, mileage, car_age, engine_capacity, engine_wear,
-        oil_quality, temp, service_months, round(prediction, 2)
-    ]], columns=[
+    # ✅ --- Save prediction record (only once) ---
+    header = [
         "Car Name", "Service Type", "Engine Type", "Condition",
         "Spare Parts", "Turbocharged", "Check Engine Light",
         "Mileage (km)", "Car Age (years)", "Engine Capacity (cc)",
         "Engine Wear", "Oil Quality", "Temperature (°C)",
         "Months Since Last Service", "Predicted Time (hours)"
-    ])
-    new_row.to_csv(record_file, mode='a', header=False, index=False)
+    ]
+
+    file_exists = os.path.isfile(record_file)
+    with open(record_file, 'a', newline='') as f:
+        writer = pd.DataFrame([[
+            car_name, service_type, engine_type, condition, parts_avail,
+            turbo, check_light, mileage, car_age, engine_capacity, engine_wear,
+            oil_quality, temp, service_months, round(prediction, 2)
+        ]], columns=header)
+        writer.to_csv(f, header=not file_exists, index=False)
+
+    print("✅ Prediction logged successfully!")
 
     return render_template('index.html', prediction_text=f"Estimated Service Time: {prediction:.2f} hours")
 
+
 @app.route('/dashboard')
 def dashboard():
-    import pandas as pd
-    import matplotlib.pyplot as plt
-    import os
-
-    record_file = 'predicted_records.csv'  # same file used for logging
-
     if not os.path.exists(record_file):
-        return render_template('dashboard.html', 
-                               tables=None, 
-                               msg="No records found yet. Predict some results first!")
+        return render_template('dashboard.html', tables=None, msg="No records found yet. Predict some results first!")
 
-    # Read prediction records
-    df = pd.read_csv(record_file, header=None, names=[
-        "Car Name", "Service Type", "Engine Type", "Condition",
-        "Spare Parts", "Turbocharged", "Check Engine Light",
-        "Mileage (km)", "Car Age (years)", "Engine Capacity (cc)",
-        "Engine Wear", "Oil Quality", "Temperature (°C)",
-        "Months Since Last Service", "Predicted Time (hours)"
-    ])
+    df = pd.read_csv(record_file)
 
-    # Summary Stats
+    # Convert numeric just in case
+    df["Predicted Time (hours)"] = pd.to_numeric(df["Predicted Time (hours)"], errors='coerce')
+
     avg_time = round(df["Predicted Time (hours)"].mean(), 2)
     common_car = df["Car Name"].mode()[0]
     total_records = len(df)
 
-    # Plot: Average Service Time by Car Name
-    plt.figure(figsize=(8,4))
+    plt.figure(figsize=(8, 4))
     car_avg = df.groupby("Car Name")["Predicted Time (hours)"].mean().sort_values()
     car_avg.plot(kind='bar', color='skyblue', edgecolor='black')
     plt.title("Average Service Time by Car")
@@ -179,8 +159,13 @@ def dashboard():
     plt.savefig(chart_path)
     plt.close()
 
-    # Pass data to HTML
-    return render_template("dashboard.html",tables=df.tail(10).values.tolist(),avg_time=avg_time,common_car=common_car,total_records=total_records,chart=chart_path)
+    return render_template("dashboard.html",
+                           tables=df.tail(10).values.tolist(),
+                           avg_time=avg_time,
+                           common_car=common_car,
+                           total_records=total_records,
+                           chart=chart_path)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
