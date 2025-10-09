@@ -1,0 +1,801 @@
+car_name,car_age_years,mileage_km,service_type,parts_to_replace,workload_queue,mechanic_experience_years,condition_of_vehicle,availability_of_spare_parts,engine_type,engine_capacity_cc,num_cylinders,turbocharged,battery_kwh,oil_quality_score,check_engine_light,avg_engine_temp_c,last_service_months_ago,engine_wear_score,service_time_hours
+Kia Carens,14,230253,Electrical,2,0,5,Good,Not Available,Petrol,1459,4,False,,4.07,True,96.1,18,94.7,19.32
+Toyota Glanza,3,90282,Full,4,0,8,Poor,Available,Petrol,1613,4,False,,6.01,False,93.3,23,39.4,15.53
+Kia Carens,8,179583,Full,1,3,21,Good,Available,Petrol,1265,4,True,,4.98,False,90.7,5,63.0,10.38
+Honda City,14,19337,Engine Repair,2,2,20,Average,Available,Petrol,1604,4,False,,6.05,True,95.4,3,41.1,15.05
+Maruti Suzuki Celerio,13,198725,Basic,2,1,1,Average,Available,Petrol,1519,4,False,,4.31,False,90.9,2,73.2,10.86
+Toyota Urban Cruiser,9,119955,Basic,1,3,13,Poor,Available,Hybrid,1374,4,True,,6.15,False,92.5,17,42.3,9.25
+Honda City,10,62250,Electrical,1,0,9,Poor,Available,Hybrid,2013,6,True,,6.11,True,100.8,5,33.8,10.04
+Volkswagen Polo,0,60987,Basic,3,5,4,Good,Available,Diesel,1799,4,False,,7.14,True,94.5,18,20.8,10.71
+Mahindra Bolero,7,118907,Basic,4,1,22,Poor,Available,Petrol,1154,3,False,,4.59,True,90.3,1,58.3,9.9
+Skoda Slavia,5,100419,Basic,4,0,13,Good,Available,Petrol,1710,4,False,,6.78,False,90.7,23,46.5,8.37
+Tata Altroz,11,244819,Painting,2,1,5,Average,Limited,Petrol,1664,4,False,,2.87,False,84.0,14,85.7,50.47
+Honda Jazz,2,55912,Full,3,0,24,Average,Available,Hybrid,1592,4,False,,6.99,True,79.5,8,28.4,8.08
+Volkswagen Vento,10,27589,Engine Repair,0,5,15,Average,Available,Diesel,1985,4,False,,6.95,False,93.6,0,27.4,19.5
+Skoda Slavia,8,195263,Electrical,4,3,3,Good,Available,Electric,0,0,False,68.9,4.95,True,60.3,0,66.9,20.55
+Mahindra Thar,12,120458,Basic,0,1,2,Average,Available,Electric,0,0,False,61.8,5.11,True,54.2,22,57.4,7.52
+Skoda Slavia,6,161640,Full,4,3,15,Good,Available,Diesel,2121,4,False,,5.48,False,92.1,4,62.8,12.67
+Mahindra Scorpio,9,223418,Full,2,3,1,Average,Available,Petrol,1099,3,False,,3.75,True,84.9,21,80.3,17.39
+Toyota Innova,1,238356,Engine Repair,2,0,8,Average,Limited,Hybrid,1545,4,False,,3.64,False,86.0,7,71.7,28.77
+Maruti Suzuki Swift,14,57905,Engine Repair,3,3,2,Good,Available,Petrol,1334,4,True,,6.64,True,97.6,18,45.2,16.47
+Maruti Suzuki Celerio,8,43256,Basic,1,4,17,Average,Available,Diesel,1731,4,False,,6.54,False,90.7,9,23.3,4.27
+Skoda Kushaq,0,106886,Full,0,0,9,Average,Available,Petrol,1707,4,False,,6.08,False,86.4,18,32.2,5.83
+Ford Figo,6,155992,Basic,0,0,5,Good,Available,Petrol,1473,4,False,,4.91,True,93.8,18,55.1,6.95
+Toyota Fortuner,8,227086,Basic,3,3,17,Poor,Available,Petrol,1835,4,False,,3.11,True,93.7,14,84.7,15.26
+Toyota Innova,0,187734,Transmission,1,0,7,Average,Not Available,Petrol,1230,4,False,,5.32,True,100.1,5,46.8,32.42
+Tata Tiago,6,194326,Basic,6,5,11,Good,Limited,Petrol,1334,4,False,,4.05,True,101.6,23,71.5,22.17
+Maruti Suzuki Swift,5,246572,Electrical,2,5,24,Good,Limited,Diesel,2183,4,False,,4.6,True,81.8,20,79.1,16.57
+Kia Seltos,1,212769,Full,2,4,14,Good,Limited,Diesel,2241,4,False,,4.66,True,86.0,19,56.0,14.51
+Volkswagen Vento,0,43182,Full,0,0,1,Poor,Available,Petrol,1515,4,False,,7.91,True,94.7,13,10.5,7.16
+Tata Harrier,0,205967,Basic,0,2,9,Good,Available,Petrol,1574,4,False,,4.36,True,84.8,2,55.9,7.92
+Ford Endeavour,6,210162,Basic,1,4,13,Good,Available,Petrol,2156,4,False,,4.14,True,88.2,4,68.7,9.26
+Honda Amaze,6,218137,Painting,2,5,16,Good,Available,Petrol,1694,4,False,,4.72,False,82.8,5,71.3,28.49
+Ford Aspire,11,179233,Basic,1,5,8,Average,Available,Petrol,1600,4,False,,5.03,True,101.1,12,82.3,11.67
+Skoda Kushaq,8,31339,Electrical,2,2,3,Good,Not Available,Petrol,1667,4,False,,7.48,False,96.2,1,23.6,22.74
+Honda WR-V,8,85938,Full,2,5,2,Good,Available,Diesel,1874,4,False,,6.3,False,90.4,10,41.6,12.57
+Skoda Slavia,4,205502,Engine Repair,2,3,23,Good,Available,Diesel,1531,4,False,,4.02,True,96.2,18,62.9,22.28
+Kia Seltos,14,136408,Basic,1,2,13,Good,Limited,Hybrid,1982,4,False,,5.3,False,91.5,3,63.5,8.1
+Kia Carnival,9,170455,Electrical,1,1,13,Average,Not Available,Diesel,2183,4,False,,4.18,False,90.9,21,66.3,21.77
+Kia Carnival,2,162154,Engine Repair,3,3,16,Good,Limited,Petrol,1104,3,False,,5.09,True,85.7,9,56.3,23.1
+Tata Harrier,9,179588,Full,2,0,12,Average,Available,Electric,0,0,False,40.0,4.92,False,50.4,19,62.1,10.23
+Hyundai Creta,5,37857,Electrical,1,4,5,Good,Limited,Hybrid,1350,4,False,,6.72,True,92.8,0,17.0,15.05
+Mahindra XUV700,6,92083,Engine Repair,3,5,4,Poor,Available,Hybrid,1504,4,False,,5.92,False,94.9,0,37.4,32.88
+Kia Seltos,2,36952,Basic,3,4,18,Good,Limited,Diesel,1872,4,False,,7.15,False,95.0,5,26.5,9.09
+Toyota Fortuner,3,112650,Basic,1,1,20,Average,Available,Hybrid,1706,4,True,,6.54,True,92.3,23,44.5,8.49
+Skoda Slavia,14,40545,Basic,0,1,16,Poor,Limited,Diesel,2363,6,False,,6.7,True,81.9,3,37.5,6.29
+Hyundai Venue,4,167258,Electrical,0,5,23,Average,Available,Hybrid,1885,4,True,,6.29,False,94.6,16,52.4,17.25
+Ford Ecosport,7,132328,Basic,1,2,1,Good,Available,Petrol,1095,3,False,,5.74,True,90.5,5,38.1,8.49
+Honda WR-V,3,83124,Full,1,3,19,Good,Limited,Diesel,2125,6,False,,7.03,False,96.0,13,42.7,6.68
+Tata Nexon,4,80757,Engine Repair,1,5,6,Good,Available,Electric,0,0,False,78.3,6.06,False,48.4,2,31.8,17.69
+Honda WR-V,12,192721,Full,3,3,18,Good,Limited,Hybrid,1669,4,False,,4.62,True,92.6,7,71.6,17.34
+Ford Figo,8,109958,Basic,1,1,1,Average,Available,Diesel,1709,4,False,,6.33,True,100.4,22,41.2,7.96
+Mahindra XUV700,2,81671,Transmission,2,3,12,Good,Available,Petrol,1312,4,False,,6.98,False,92.6,2,32.6,25.14
+Toyota Glanza,8,215618,Basic,2,2,1,Poor,Not Available,Petrol,1030,3,False,,3.24,False,93.6,0,64.6,16.04
+Tata Harrier,2,68926,Full,2,0,11,Good,Available,Hybrid,2475,4,False,,6.02,False,98.8,18,21.5,6.7
+Volkswagen Polo,3,141251,Electrical,1,2,23,Poor,Available,Petrol,1972,4,True,,5.36,True,99.4,7,47.0,15.76
+Volkswagen Taigun,12,66657,Electrical,1,0,12,Average,Limited,Petrol,1051,3,False,,6.14,True,95.5,5,43.6,11.52
+Skoda Kushaq,4,127840,Engine Repair,5,4,20,Good,Available,Petrol,1195,3,False,,5.29,True,87.7,11,51.1,24.98
+Volkswagen Polo,1,196542,Electrical,2,2,12,Good,Limited,Petrol,1340,4,False,,5.2,False,96.0,0,46.3,16.59
+Volkswagen Taigun,10,114808,Electrical,3,4,22,Good,Available,Diesel,1793,4,False,,5.38,True,92.5,9,61.6,17.75
+Toyota Innova,13,186374,Basic,4,4,9,Good,Available,Petrol,1730,4,False,,4.4,True,89.8,8,81.7,16.26
+Honda WR-V,3,183559,Engine Repair,3,0,9,Good,Available,Petrol,1369,4,False,,5.17,False,78.6,19,64.4,19.42
+Mahindra Bolero,4,242213,Basic,4,2,17,Poor,Not Available,Petrol,1271,4,False,,3.64,True,91.0,2,74.4,17.44
+Mahindra Bolero,6,239463,Full,1,3,20,Average,Not Available,Petrol,1623,4,False,,4.18,False,93.6,12,69.5,12.92
+Hyundai i20,0,140735,Full,0,4,13,Poor,Available,Diesel,1919,4,False,,6.2,True,84.9,0,35.5,9.47
+Kia Seltos,1,188941,Basic,1,4,5,Poor,Available,Petrol,1041,3,False,,4.81,True,94.5,11,55.7,12.29
+Kia Seltos,8,131123,Transmission,3,3,4,Average,Available,Petrol,1461,4,False,,5.33,True,92.8,0,52.3,38.97
+Mahindra Thar,6,125382,Basic,3,5,21,Good,Limited,Hybrid,2028,4,True,,5.35,False,89.9,4,47.9,14.41
+Tata Tiago,7,95403,Full,3,3,16,Good,Available,Petrol,1634,4,False,,5.76,False,93.3,19,46.8,8.67
+Maruti Suzuki Celerio,12,172618,Basic,1,0,6,Good,Not Available,Petrol,1466,4,False,,4.28,False,96.9,13,66.5,9.44
+Kia Carens,8,59982,Full,2,4,23,Good,Available,Petrol,1687,4,False,,6.84,False,90.4,8,38.9,7.19
+Hyundai i20,12,247995,Basic,2,5,16,Average,Available,Diesel,2050,4,True,,2.44,True,93.9,23,80.3,15.79
+Ford Endeavour,2,26847,Full,1,2,16,Good,Available,Hybrid,1962,4,True,,7.91,False,86.9,17,20.0,6.98
+Maruti Suzuki Swift,0,86452,Electrical,2,5,24,Good,Available,Hybrid,1968,4,False,,7.27,False,91.6,17,24.4,12.56
+Skoda Kushaq,0,32372,Engine Repair,2,2,18,Poor,Limited,Electric,0,0,False,64.4,7.69,False,52.9,16,21.3,14.19
+Honda City,13,204538,Full,3,2,1,Good,Available,Petrol,2144,4,False,,4.29,False,96.6,23,81.4,12.58
+Mahindra XUV700,14,216351,Basic,3,4,21,Poor,Limited,Petrol,1781,4,True,,4.24,True,93.1,21,87.1,20.29
+Maruti Suzuki Swift,0,197267,Painting,2,5,17,Average,Available,Diesel,2130,4,True,,4.35,True,94.3,21,54.3,56.84
+Maruti Suzuki Swift,0,181051,Full,2,0,10,Average,Available,Petrol,1484,4,False,,4.76,False,97.1,6,53.9,10.64
+Honda Amaze,9,161259,Transmission,4,4,22,Good,Available,Diesel,1632,4,False,,5.45,False,92.9,3,52.6,37.55
+Maruti Suzuki Baleno,5,240411,Transmission,2,1,21,Good,Available,Diesel,2244,6,True,,4.43,False,89.6,4,72.9,32.1
+Ford Figo,14,146756,Engine Repair,3,0,18,Average,Not Available,Petrol,1295,4,True,,5.18,False,87.3,20,61.6,32.73
+Honda City,13,59073,Engine Repair,4,0,8,Good,Limited,Diesel,2257,4,False,,5.32,False,86.6,4,53.2,17.41
+Tata Altroz,1,145814,Full,0,2,23,Average,Available,Diesel,2057,4,True,,6.33,True,87.2,6,36.5,7.83
+Kia Seltos,6,134019,Electrical,4,0,6,Good,Limited,Petrol,955,3,False,,4.35,True,88.9,10,63.2,21.52
+Honda Jazz,5,194035,Transmission,3,2,5,Average,Available,Petrol,1429,4,False,,5.35,False,85.9,17,66.2,26.08
+Skoda Rapid,14,162732,Basic,2,3,8,Good,Available,Petrol,1517,4,False,,4.91,True,96.3,8,66.6,11.38
+Mahindra XUV700,0,57988,Full,5,1,14,Average,Not Available,Diesel,2449,4,False,,7.16,True,85.5,17,32.7,16.11
+Tata Tiago,12,106736,Electrical,4,5,6,Good,Available,Petrol,1571,4,False,,4.85,True,94.9,22,56.2,13.15
+Kia Carens,0,20340,Full,0,2,15,Good,Available,Diesel,2024,4,False,,8.36,False,95.0,2,13.3,3.01
+Skoda Rapid,12,181778,Engine Repair,2,2,13,Average,Available,Diesel,1840,4,False,,4.47,True,97.2,0,75.3,23.65
+Maruti Suzuki Celerio,3,222639,Engine Repair,3,5,10,Good,Not Available,Electric,0,0,False,82.5,4.06,False,65.0,10,70.6,31.95
+Honda Amaze,3,60414,Electrical,2,2,11,Good,Limited,Petrol,1840,4,True,,6.95,False,104.1,7,25.8,15.62
+Ford Ecosport,4,9125,Basic,0,5,8,Good,Not Available,Petrol,1332,4,False,,7.27,True,88.2,16,14.3,7.56
+Hyundai Venue,7,24620,Full,5,3,11,Average,Available,Petrol,1298,4,True,,6.78,False,90.5,10,43.0,13.69
+Ford Ecosport,1,199762,Transmission,1,4,7,Average,Available,Diesel,2291,6,True,,3.87,False,86.7,22,60.7,33.61
+Hyundai Verna,7,34728,Full,0,5,13,Good,Available,Diesel,2541,4,False,,7.44,True,82.2,3,23.2,6.61
+Tata Tiago,6,42068,Basic,4,4,7,Average,Available,Electric,0,0,False,56.8,5.91,True,59.6,21,37.9,9.7
+Volkswagen Polo,0,182762,Basic,1,5,18,Poor,Available,Petrol,1147,3,False,,5.67,True,86.7,7,48.3,10.13
+Honda WR-V,9,71702,Full,4,4,12,Good,Available,Diesel,1924,4,True,,6.89,False,85.4,23,44.3,14.34
+Mahindra XUV700,3,126894,Basic,3,4,22,Good,Limited,Diesel,2347,4,True,,4.96,True,92.7,9,43.0,12.67
+Kia Sonet,11,27010,Basic,3,1,19,Good,Available,Diesel,2306,4,True,,7.07,False,88.6,7,47.4,6.18
+Honda Jazz,9,139598,Full,1,2,15,Average,Available,Hybrid,1703,4,False,,5.18,False,93.0,10,57.2,6.8
+Tata Nexon,9,73478,Transmission,3,5,23,Good,Available,Diesel,1402,4,False,,5.45,True,93.5,21,47.4,34.31
+Skoda Slavia,3,165041,Basic,1,0,18,Good,Available,Petrol,1448,4,False,,5.61,True,92.0,5,50.1,6.88
+Tata Tiago,8,223935,Engine Repair,2,2,4,Good,Available,Petrol,1742,4,False,,4.01,True,97.4,13,69.2,20.6
+Tata Harrier,2,85180,Basic,2,2,22,Good,Not Available,Hybrid,1613,4,False,,6.89,True,91.9,19,40.8,9.97
+Tata Tiago,8,40934,Electrical,2,5,6,Good,Available,Hybrid,2361,4,True,,6.78,True,91.7,18,29.9,16.76
+Kia Seltos,1,225903,Full,3,4,4,Average,Available,Petrol,1716,4,True,,4.8,False,96.5,10,68.6,14.63
+Honda Amaze,13,121368,Basic,1,4,5,Average,Available,Petrol,1985,4,True,,5.85,True,91.9,0,48.7,12.4
+Toyota Glanza,9,212588,Basic,2,2,8,Average,Limited,Diesel,2600,4,False,,3.79,True,96.9,10,85.7,14.67
+Hyundai Venue,2,12219,Transmission,2,3,14,Good,Available,Petrol,1618,4,False,,7.51,False,102.4,23,22.4,13.4
+Kia Sonet,10,89372,Basic,1,0,24,Average,Available,Petrol,1276,4,False,,5.67,True,87.9,14,42.0,4.67
+Toyota Fortuner,6,10327,Basic,5,1,4,Poor,Available,Petrol,1637,4,False,,7.16,False,87.2,6,27.0,9.87
+Skoda Kushaq,7,93732,Full,2,0,18,Good,Limited,Petrol,1349,4,False,,6.41,True,87.6,12,37.4,9.36
+Hyundai Verna,2,23419,Full,4,1,12,Good,Available,Diesel,1927,4,True,,7.61,True,98.4,3,20.6,13.85
+Tata Nexon,0,133545,Basic,2,0,23,Average,Available,Petrol,1336,4,False,,5.76,True,93.0,15,35.4,7.5
+Ford Ecosport,8,123693,Full,2,4,23,Good,Limited,Petrol,1547,4,False,,4.97,True,88.7,15,38.3,11.69
+Tata Altroz,1,124841,Basic,2,4,17,Good,Available,Diesel,1936,4,True,,6.16,True,90.9,14,38.6,11.54
+Mahindra Bolero,9,106019,Basic,3,1,13,Good,Available,Petrol,1447,4,False,,6.02,True,85.9,14,51.4,8.51
+Volkswagen Vento,9,54592,Full,2,2,18,Poor,Not Available,Petrol,1194,3,False,,7.27,True,80.9,10,33.7,13.19
+Honda Amaze,5,154262,Full,3,4,19,Good,Limited,Hybrid,1674,4,False,,5.36,True,92.1,1,56.2,12.87
+Skoda Kushaq,14,171205,Full,2,1,22,Good,Available,Electric,0,0,False,50.9,4.11,True,58.8,21,72.8,12.4
+Hyundai Verna,7,177489,Transmission,2,1,23,Good,Available,Hybrid,1262,4,False,,3.59,True,82.6,9,64.7,23.87
+Skoda Slavia,4,8024,Electrical,1,4,14,Good,Limited,Petrol,1571,4,False,,7.08,True,92.6,5,14.8,10.07
+Ford Ecosport,13,174693,Transmission,2,1,15,Good,Available,Hybrid,1933,4,False,,3.93,True,89.6,1,84.3,39.56
+Ford Endeavour,8,61982,Full,1,5,22,Good,Available,Petrol,1660,4,False,,6.83,True,96.3,3,34.2,7.82
+Mahindra XUV700,5,173526,Transmission,1,2,17,Average,Limited,Petrol,1314,4,False,,4.94,False,92.9,11,60.0,27.53
+Hyundai Venue,1,114890,Electrical,1,0,17,Average,Available,Petrol,1317,4,True,,6.96,False,87.8,11,31.8,8.82
+Kia Seltos,2,88148,Engine Repair,5,3,21,Average,Limited,Hybrid,2470,6,False,,6.44,False,93.3,0,36.5,29.98
+Tata Nexon,5,210633,Full,4,3,10,Poor,Available,Petrol,2030,6,False,,4.44,False,92.7,20,74.9,15.62
+Honda WR-V,12,106087,Engine Repair,3,1,2,Good,Not Available,Hybrid,966,3,False,,4.8,True,89.4,5,61.1,29.82
+Honda Amaze,5,5581,Basic,3,3,24,Good,Available,Petrol,1439,4,False,,7.0,True,90.0,3,27.8,6.26
+Maruti Suzuki Dzire,10,31337,Electrical,3,3,15,Poor,Available,Hybrid,1645,4,False,,6.57,False,100.6,1,29.2,18.25
+Ford Figo,6,11620,Full,4,4,23,Good,Limited,Petrol,1670,4,False,,7.41,False,90.3,18,27.6,9.73
+Mahindra Bolero,13,157359,Engine Repair,0,3,23,Average,Limited,Diesel,2342,6,False,,4.59,True,99.9,15,69.0,15.06
+Hyundai i20,8,226354,Engine Repair,1,3,7,Good,Available,Diesel,1229,4,False,,3.93,True,89.9,0,73.4,21.87
+Honda Amaze,10,114691,Full,5,3,10,Good,Not Available,Petrol,1449,4,False,,5.77,False,99.7,13,67.7,20.11
+Skoda Rapid,10,102438,Painting,3,0,9,Average,Limited,Diesel,1824,4,False,,5.43,False,97.2,0,51.8,56.24
+Honda City,6,209197,Electrical,0,5,24,Average,Available,Petrol,1222,4,False,,3.46,False,93.1,19,57.7,10.82
+Maruti Suzuki Celerio,8,151429,Full,0,3,8,Good,Available,Diesel,1683,4,False,,4.76,True,92.9,9,57.9,10.54
+Toyota Innova,6,19436,Engine Repair,2,2,2,Poor,Available,Petrol,1271,4,False,,6.64,False,88.1,5,17.5,16.14
+Hyundai i20,7,193616,Basic,2,5,5,Good,Available,Electric,0,0,False,31.2,3.98,True,57.9,12,63.3,11.27
+Skoda Kushaq,4,46103,Full,1,5,9,Poor,Not Available,Hybrid,2482,4,True,,7.31,True,94.2,4,15.7,15.13
+Skoda Kushaq,14,136897,Basic,3,0,23,Good,Available,Diesel,2396,4,False,,4.8,False,83.8,3,68.8,7.04
+Tata Harrier,4,77102,Electrical,0,0,16,Good,Available,Electric,0,0,False,64.1,6.83,True,58.9,20,24.1,10.75
+Ford Ecosport,11,229729,Full,6,0,23,Good,Available,Petrol,1657,4,False,,4.2,True,97.4,1,86.0,15.32
+Honda Amaze,10,244229,Basic,2,0,20,Good,Available,Petrol,1558,4,False,,3.23,True,92.6,14,88.3,9.23
+Kia Sonet,13,63490,Basic,2,3,15,Average,Available,Diesel,2438,4,True,,5.79,True,90.0,16,48.3,11.36
+Mahindra Thar,12,53130,Basic,2,2,1,Average,Available,Petrol,1807,4,False,,6.01,True,91.3,19,52.0,8.92
+Mahindra XUV700,12,172889,Engine Repair,1,3,11,Good,Not Available,Petrol,991,3,False,,4.04,True,94.6,9,69.2,28.16
+Skoda Rapid,14,104459,Transmission,1,2,17,Average,Available,Diesel,2161,6,False,,5.15,True,91.7,12,50.7,27.32
+Skoda Slavia,9,67762,Transmission,2,5,12,Average,Available,Petrol,1620,4,False,,6.42,False,90.8,8,40.7,34.0
+Mahindra Scorpio,9,10182,Full,0,5,21,Good,Available,Diesel,2332,4,False,,8.13,True,94.0,11,19.1,5.73
+Kia Sonet,2,112117,Transmission,1,5,7,Good,Limited,Petrol,1726,4,False,,6.3,True,92.6,3,33.4,26.58
+Ford Ecosport,6,172437,Engine Repair,2,1,6,Good,Available,Electric,0,0,False,77.7,5.12,False,54.1,17,50.7,13.07
+Tata Nexon,0,138760,Full,0,3,10,Good,Available,Diesel,2302,6,True,,5.99,True,100.1,16,39.0,11.26
+Honda Amaze,3,34729,Full,3,0,19,Average,Available,Diesel,1858,4,True,,7.83,True,88.5,16,16.3,13.69
+Volkswagen Taigun,2,249272,Basic,2,1,18,Poor,Available,Petrol,1286,4,False,,4.46,False,85.5,19,69.0,10.65
+Ford Aspire,14,198849,Engine Repair,2,1,6,Average,Available,Hybrid,1933,4,False,,3.91,False,83.2,15,85.2,24.47
+Volkswagen Taigun,12,5486,Transmission,1,2,6,Good,Available,Diesel,2238,6,False,,7.15,True,91.7,23,25.2,20.54
+Honda Jazz,0,65974,Electrical,0,1,1,Average,Not Available,Electric,0,0,False,84.9,6.49,False,52.1,7,24.9,8.46
+Ford Figo,7,122432,Full,4,4,23,Average,Available,Petrol,1596,4,False,,5.08,True,87.0,2,50.9,12.32
+Ford Ecosport,11,215686,Full,1,4,14,Good,Not Available,Hybrid,1593,4,False,,4.23,True,96.1,20,79.4,18.06
+Skoda Rapid,12,190633,Basic,0,3,8,Poor,Available,Petrol,895,3,False,,3.19,True,90.5,4,73.8,10.02
+Ford Endeavour,7,75924,Basic,0,3,7,Good,Available,Petrol,1581,4,False,,6.98,True,86.7,17,37.1,6.46
+Volkswagen Vento,14,177915,Basic,5,2,17,Good,Available,Diesel,1544,4,False,,3.35,True,94.9,0,76.8,11.34
+Tata Altroz,2,46896,Full,6,3,4,Average,Available,Hybrid,1844,4,False,,7.17,True,87.6,11,29.3,16.38
+Mahindra Scorpio,10,26660,Engine Repair,4,1,15,Average,Available,Hybrid,2173,6,False,,6.44,False,88.3,7,43.8,20.62
+Mahindra Thar,2,102556,Engine Repair,4,3,9,Average,Available,Diesel,1786,4,False,,5.28,True,90.2,0,40.6,24.83
+Honda City,5,121713,Full,2,0,13,Average,Not Available,Petrol,1565,4,False,,5.1,True,96.9,10,52.8,12.8
+Mahindra Scorpio,13,71276,Basic,0,5,17,Good,Available,Petrol,1328,4,False,,5.52,True,91.2,9,44.2,6.17
+Maruti Suzuki Baleno,0,42868,Engine Repair,2,0,12,Average,Available,Diesel,1940,4,True,,7.89,False,90.3,20,21.2,16.88
+Kia Carnival,13,180499,Electrical,3,1,3,Average,Available,Petrol,1377,4,False,,4.03,False,89.3,22,71.3,16.26
+Volkswagen Vento,7,61756,Full,4,5,4,Good,Limited,Diesel,2598,6,False,,7.24,False,87.2,6,45.3,15.81
+Mahindra Bolero,4,150514,Basic,1,0,22,Good,Available,Diesel,2651,6,False,,5.47,True,94.8,23,51.2,6.26
+Skoda Kushaq,0,158801,Full,1,0,9,Good,Available,Petrol,1641,4,False,,5.11,False,89.5,15,41.8,7.49
+Ford Aspire,6,170359,Transmission,3,4,12,Average,Limited,Petrol,1267,4,False,,5.22,False,93.9,10,58.4,45.35
+Tata Altroz,13,85332,Basic,2,5,20,Average,Available,Petrol,1628,4,False,,6.53,True,90.7,7,53.3,8.53
+Toyota Urban Cruiser,14,20492,Engine Repair,0,1,23,Good,Available,Petrol,1720,4,False,,6.79,True,93.9,18,36.8,17.85
+Toyota Innova,6,125112,Full,1,1,20,Good,Available,Diesel,1984,4,False,,5.03,False,90.4,20,41.2,5.8
+Ford Ecosport,9,179248,Full,0,0,24,Average,Limited,Diesel,1632,4,False,,3.88,True,87.0,20,70.7,8.07
+Mahindra Scorpio,7,128099,Engine Repair,3,5,10,Average,Available,Petrol,1284,4,False,,4.08,True,93.4,2,58.7,27.51
+Hyundai i20,5,119490,Basic,2,5,7,Good,Not Available,Diesel,1703,4,False,,6.62,False,93.8,18,37.8,12.93
+Hyundai Venue,8,193792,Basic,6,2,11,Poor,Available,Petrol,1424,4,False,,4.3,False,96.3,18,75.1,14.28
+Tata Tiago,8,66524,Full,2,5,8,Good,Available,Petrol,1360,4,False,,6.32,True,86.5,15,38.0,12.45
+Honda City,4,76856,Basic,1,0,18,Poor,Not Available,Diesel,2390,6,False,,6.45,True,82.9,18,28.7,6.23
+Maruti Suzuki Swift,7,23056,Basic,7,0,4,Good,Available,Hybrid,1762,4,False,,7.25,False,92.5,10,29.9,10.21
+Maruti Suzuki Celerio,5,165531,Basic,0,3,13,Average,Available,Diesel,1929,4,False,,5.12,True,89.7,0,49.6,7.8
+Tata Altroz,13,59679,Basic,1,3,6,Good,Limited,Petrol,1504,4,False,,6.09,False,96.2,7,36.7,5.26
+Volkswagen Polo,1,225227,Basic,0,0,12,Average,Available,Diesel,2193,4,True,,4.1,False,94.2,20,54.3,6.56
+Maruti Suzuki Celerio,1,72353,Electrical,4,2,23,Good,Limited,Petrol,1789,4,False,,6.46,False,88.4,17,25.6,13.64
+Skoda Kushaq,14,11087,Basic,2,3,6,Poor,Available,Petrol,1249,4,True,,7.05,False,87.4,23,37.4,9.02
+Honda WR-V,8,195763,Transmission,2,1,17,Average,Not Available,Petrol,1255,4,False,,4.06,False,92.1,4,65.7,37.01
+Honda WR-V,0,177604,Basic,2,1,24,Good,Limited,Petrol,1530,4,False,,5.84,True,93.4,7,42.0,8.39
+Mahindra Scorpio,7,176583,Painting,4,2,7,Good,Not Available,Petrol,1740,4,False,,5.21,False,100.6,20,70.8,56.51
+Mahindra Bolero,1,227973,Engine Repair,4,5,5,Average,Limited,Electric,0,0,False,85.4,3.97,True,53.2,14,61.5,31.44
+Volkswagen Polo,5,199782,Basic,2,4,22,Good,Available,Electric,0,0,False,85.5,4.23,True,49.1,1,53.3,8.71
+Hyundai Creta,11,28148,Full,1,4,18,Average,Available,Hybrid,1426,4,False,,7.23,False,91.2,11,33.6,6.34
+Volkswagen Taigun,14,75247,Basic,1,4,1,Average,Available,Petrol,1854,4,False,,5.53,False,101.9,19,51.6,7.64
+Honda Amaze,6,244347,Electrical,0,2,23,Good,Available,Petrol,1188,3,False,,4.09,False,93.6,15,66.0,7.87
+Volkswagen Polo,12,236144,Basic,3,2,20,Good,Available,Hybrid,2066,4,False,,3.26,True,93.5,4,94.3,14.44
+Hyundai i20,2,105688,Basic,1,4,23,Good,Available,Electric,0,0,False,83.7,6.51,True,60.1,15,29.4,7.31
+Mahindra Bolero,9,71026,Full,1,4,16,Good,Limited,Petrol,1525,4,False,,5.72,True,89.6,2,38.6,10.65
+Hyundai Verna,0,121541,Full,2,2,22,Average,Available,Petrol,1182,3,False,,5.4,False,84.8,4,48.0,9.84
+Hyundai Venue,3,126133,Full,1,0,2,Poor,Available,Diesel,2057,6,False,,5.43,False,98.1,13,39.6,9.09
+Toyota Urban Cruiser,1,195485,Full,4,1,22,Average,Limited,Petrol,1436,4,False,,5.04,True,99.6,3,57.7,18.28
+Kia Carnival,13,205323,Transmission,3,5,4,Average,Available,Petrol,1223,4,False,,3.81,True,87.8,0,85.8,26.4
+Honda Amaze,1,53762,Basic,4,2,13,Average,Available,Petrol,1491,4,False,,6.96,True,86.3,18,22.9,7.58
+Maruti Suzuki Baleno,8,84298,Full,3,3,7,Poor,Available,Petrol,1638,4,False,,5.36,True,82.0,17,42.6,15.71
+Volkswagen Vento,2,47879,Engine Repair,2,3,9,Good,Not Available,Hybrid,2095,4,True,,7.03,False,93.4,23,23.9,25.24
+Skoda Rapid,2,181981,Engine Repair,0,0,20,Good,Limited,Diesel,1745,4,False,,4.9,True,89.7,20,40.7,26.56
+Maruti Suzuki Dzire,7,233510,Full,0,0,13,Good,Limited,Petrol,1191,3,False,,3.61,False,91.9,12,75.0,9.77
+Skoda Slavia,10,71836,Painting,1,4,15,Good,Limited,Petrol,1790,4,False,,6.35,True,93.7,8,45.6,41.69
+Ford Ecosport,13,201643,Basic,2,0,8,Good,Available,Petrol,1700,4,False,,4.14,True,93.7,5,69.1,8.71
+Hyundai i20,11,120320,Full,1,0,18,Average,Available,Diesel,2334,4,False,,5.14,True,95.8,17,53.5,10.87
+Tata Altroz,13,9140,Full,0,2,5,Good,Limited,Petrol,1570,4,False,,6.3,True,81.1,21,32.5,8.23
+Tata Nexon,3,239723,Painting,1,3,10,Poor,Available,Petrol,1118,3,False,,3.68,False,89.0,15,69.3,41.29
+Kia Carens,13,154725,Full,0,5,5,Good,Limited,Diesel,2330,6,True,,4.81,False,85.2,15,70.5,13.1
+Skoda Kushaq,3,168658,Full,3,4,22,Good,Available,Petrol,1817,4,False,,5.07,True,90.3,8,55.7,11.0
+Hyundai Venue,7,77126,Basic,1,3,7,Good,Limited,Petrol,1225,4,False,,6.39,False,102.0,4,35.8,5.77
+Tata Altroz,12,181077,Engine Repair,0,2,2,Good,Available,Diesel,2758,4,False,,4.25,True,93.3,21,66.2,25.42
+Honda City,2,11216,Electrical,2,5,8,Average,Limited,Diesel,1929,4,False,,8.15,True,95.3,12,10.3,19.51
+Skoda Rapid,10,98528,Full,2,4,6,Poor,Available,Petrol,1522,4,False,,5.3,True,98.2,11,45.0,15.6
+Toyota Fortuner,6,177554,Full,1,0,11,Good,Available,Petrol,1304,4,True,,4.93,True,83.2,14,60.2,9.81
+Honda City,9,52314,Full,0,3,16,Good,Available,Diesel,2132,4,True,,6.81,True,88.7,8,28.8,7.97
+Tata Altroz,10,57801,Basic,1,0,15,Good,Not Available,Petrol,1349,4,False,,6.33,False,96.6,0,38.3,4.29
+Mahindra Scorpio,12,232687,Full,2,0,9,Average,Available,Petrol,1466,4,True,,2.88,False,90.4,21,85.1,12.38
+Tata Tiago,8,138676,Engine Repair,0,3,4,Average,Available,Hybrid,1942,4,False,,5.24,False,95.3,9,61.1,21.97
+Ford Aspire,7,157820,Painting,2,2,23,Poor,Available,Petrol,1459,4,False,,5.08,False,91.4,6,60.7,49.8
+Tata Altroz,14,213130,Basic,0,1,23,Good,Available,Diesel,2088,4,True,,3.68,True,88.9,0,86.7,9.08
+Toyota Glanza,11,162705,Basic,1,1,10,Average,Available,Hybrid,1881,4,True,,4.82,False,102.1,12,58.1,8.48
+Tata Tiago,1,115271,Engine Repair,2,2,1,Poor,Available,Petrol,1861,4,False,,6.29,True,93.2,17,32.9,30.85
+Toyota Fortuner,5,197852,Transmission,1,2,6,Good,Available,Petrol,1153,3,True,,4.7,False,94.3,20,67.4,25.97
+Volkswagen Taigun,2,76330,Engine Repair,2,1,3,Good,Available,Diesel,1240,4,False,,7.29,False,96.8,0,21.5,12.99
+Volkswagen Polo,2,160973,Basic,1,1,21,Good,Available,Petrol,1143,3,False,,5.43,False,86.5,4,45.9,4.78
+Ford Figo,12,113742,Painting,1,0,11,Good,Not Available,Petrol,1547,4,True,,5.74,True,90.0,7,52.3,53.0
+Hyundai Verna,8,42070,Full,2,2,21,Good,Limited,Petrol,1542,4,True,,6.56,False,84.3,7,37.1,7.94
+Toyota Urban Cruiser,7,39770,Basic,0,0,7,Good,Available,Petrol,1671,4,False,,7.4,True,93.9,20,27.8,3.96
+Kia Carens,11,14462,Electrical,1,0,8,Average,Available,Hybrid,1881,4,False,,7.21,False,87.2,21,35.6,9.76
+Honda Jazz,11,43908,Basic,6,3,20,Good,Available,Diesel,1490,4,False,,6.59,True,97.0,11,49.0,12.96
+Kia Sonet,0,182865,Full,5,4,2,Poor,Available,Petrol,1360,4,False,,5.33,True,86.4,21,44.4,18.81
+Honda WR-V,0,25336,Full,2,4,21,Average,Available,Diesel,1897,4,True,,7.37,False,91.4,7,17.0,8.36
+Skoda Slavia,11,157290,Basic,2,5,9,Average,Available,Diesel,2152,6,False,,4.51,True,85.7,20,61.7,13.13
+Honda Amaze,10,196667,Electrical,1,3,18,Good,Available,Electric,0,0,True,74.9,5.01,False,51.7,0,60.1,17.65
+Tata Harrier,6,223677,Full,2,2,3,Average,Available,Hybrid,1642,4,False,,3.86,True,89.4,10,73.9,17.35
+Tata Nexon,2,129089,Basic,2,0,8,Good,Available,Hybrid,1976,4,False,,5.1,False,94.5,10,34.9,5.27
+Kia Seltos,4,70666,Basic,2,0,2,Good,Limited,Petrol,1229,4,False,,6.0,False,90.1,5,38.2,7.69
+Mahindra Thar,1,12795,Basic,2,5,19,Average,Available,Petrol,1374,4,False,,7.48,False,88.5,19,12.1,5.09
+Toyota Innova,8,102917,Engine Repair,2,1,5,Average,Limited,Diesel,2401,6,False,,6.32,False,95.9,4,45.1,23.81
+Hyundai Verna,10,213442,Basic,2,2,1,Good,Available,Petrol,1211,4,False,,3.28,True,87.8,5,61.7,12.99
+Toyota Urban Cruiser,7,44955,Electrical,0,2,11,Average,Available,Petrol,1681,4,False,,7.49,True,92.0,4,34.5,12.21
+Toyota Glanza,1,115052,Full,6,5,2,Good,Available,Diesel,1874,4,False,,6.24,True,95.0,12,39.8,20.43
+Ford Endeavour,14,64713,Basic,3,2,7,Average,Available,Petrol,1602,4,False,,5.55,False,102.8,18,43.0,6.8
+Ford Aspire,1,107305,Transmission,1,0,16,Average,Available,Diesel,2356,6,True,,5.21,False,84.2,16,30.9,37.19
+Maruti Suzuki Baleno,3,147101,Basic,2,4,18,Good,Available,Petrol,1679,4,False,,4.7,False,80.4,20,55.9,8.2
+Maruti Suzuki Dzire,6,230986,Basic,6,3,20,Poor,Not Available,Diesel,2086,6,False,,3.75,True,85.2,5,78.4,30.37
+Tata Nexon,12,96280,Basic,2,3,1,Good,Available,Diesel,1993,4,True,,5.61,True,86.0,5,50.7,11.15
+Mahindra Thar,1,241039,Basic,4,3,6,Good,Available,Petrol,1642,4,False,,3.24,True,87.7,2,73.0,12.05
+Maruti Suzuki Celerio,5,86238,Basic,1,4,8,Good,Available,Hybrid,1811,4,False,,6.39,False,88.8,21,39.8,6.47
+Honda Amaze,12,52186,Transmission,4,0,1,Poor,Available,Petrol,1406,4,False,,5.9,False,83.8,17,43.3,48.22
+Tata Nexon,4,176485,Electrical,3,1,24,Poor,Not Available,Petrol,1647,4,False,,5.08,True,90.4,4,57.6,30.33
+Mahindra Scorpio,2,135040,Full,2,0,4,Average,Limited,Diesel,2603,4,True,,6.43,True,90.8,9,29.6,16.06
+Hyundai Venue,6,234851,Basic,3,3,16,Average,Available,Petrol,1440,4,False,,4.83,True,95.4,11,73.0,13.83
+Kia Sonet,8,160219,Basic,0,2,23,Poor,Available,Hybrid,1324,4,False,,5.08,True,92.3,1,50.0,9.35
+Honda Amaze,2,225377,Basic,3,1,20,Good,Not Available,Petrol,1159,3,False,,3.82,True,89.2,2,71.2,13.8
+Mahindra XUV700,3,244045,Full,4,5,12,Average,Limited,Diesel,2314,6,False,,3.12,True,96.3,21,70.1,19.19
+Honda Amaze,12,124930,Engine Repair,3,1,7,Poor,Available,Diesel,1794,4,False,,5.07,True,85.0,22,57.1,25.5
+Ford Ecosport,8,233672,Basic,2,5,11,Poor,Available,Petrol,1208,4,False,,4.12,False,91.0,19,74.7,13.69
+Skoda Slavia,14,14878,Basic,1,0,24,Average,Limited,Diesel,2189,4,False,,5.86,True,88.2,23,27.7,6.03
+Tata Harrier,12,10541,Full,2,2,9,Poor,Available,Diesel,2162,4,True,,5.67,True,90.0,4,35.3,13.93
+Tata Nexon,4,73308,Electrical,3,2,1,Average,Limited,Petrol,1409,4,False,,6.18,False,96.9,2,39.0,18.9
+Honda Amaze,0,134283,Engine Repair,1,0,16,Average,Limited,Petrol,1420,4,False,,5.72,False,93.1,6,34.0,16.52
+Mahindra Thar,7,138385,Electrical,2,5,21,Good,Limited,Electric,0,0,False,80.0,5.55,False,52.7,5,63.5,12.33
+Maruti Suzuki Swift,13,124085,Basic,2,0,19,Good,Available,Petrol,1651,4,False,,5.04,True,90.3,17,47.2,9.07
+Kia Carnival,0,194016,Basic,1,1,20,Average,Not Available,Diesel,2085,4,False,,4.57,True,91.6,10,46.4,10.97
+Maruti Suzuki Celerio,8,142123,Transmission,2,5,6,Good,Available,Diesel,2186,4,True,,5.48,True,89.0,10,52.7,34.5
+Honda City,5,69070,Basic,5,1,16,Good,Not Available,Petrol,1402,4,False,,5.84,False,84.2,0,40.9,12.77
+Skoda Kushaq,1,104020,Engine Repair,2,4,24,Average,Available,Petrol,1609,4,False,,5.88,True,86.0,8,27.8,17.2
+Honda Amaze,7,46796,Engine Repair,2,3,20,Good,Available,Diesel,2080,6,True,,6.24,False,91.8,21,36.9,14.1
+Tata Harrier,5,100211,Basic,0,2,16,Average,Available,Hybrid,2104,6,False,,6.0,True,87.2,12,44.8,5.45
+Ford Ecosport,1,152425,Transmission,1,2,9,Poor,Available,Petrol,1712,4,True,,6.68,False,86.2,0,40.8,39.26
+Ford Endeavour,6,64784,Basic,2,2,21,Average,Not Available,Petrol,1230,4,False,,6.29,False,87.2,1,35.4,4.74
+Ford Figo,5,194826,Transmission,1,5,19,Average,Available,Petrol,1830,4,True,,4.85,True,90.9,2,61.4,34.08
+Ford Aspire,5,156808,Transmission,0,2,5,Good,Limited,Petrol,1331,4,False,,6.18,False,91.2,4,40.0,19.75
+Ford Endeavour,2,182572,Painting,2,0,6,Poor,Available,Diesel,2117,4,False,,6.18,False,91.6,21,48.5,48.21
+Ford Endeavour,0,129567,Basic,4,5,24,Good,Not Available,Petrol,1499,4,False,,5.31,False,83.2,16,36.1,9.05
+Toyota Innova,8,77509,Full,0,4,4,Average,Available,Diesel,1953,4,False,,6.02,True,89.1,10,33.3,12.67
+Honda Jazz,11,36796,Basic,1,3,16,Poor,Limited,Hybrid,1875,4,False,,6.45,False,91.9,9,44.9,5.96
+Honda Jazz,1,247530,Basic,3,3,5,Good,Available,Diesel,2264,4,False,,3.63,False,95.5,15,70.9,13.92
+Tata Nexon,13,87770,Transmission,3,3,15,Average,Available,Hybrid,1639,4,False,,5.62,False,89.6,12,52.8,40.64
+Skoda Slavia,4,113121,Painting,3,0,5,Average,Available,Petrol,1163,3,False,,6.62,True,84.7,10,40.8,44.8
+Ford Endeavour,4,151638,Basic,3,1,24,Average,Available,Petrol,1675,4,False,,5.21,True,86.6,18,59.2,8.66
+Kia Carnival,8,50363,Basic,3,1,14,Good,Available,Petrol,1446,4,False,,7.31,False,93.4,17,33.4,7.0
+Honda Amaze,5,114591,Basic,2,2,9,Good,Available,Petrol,1044,3,False,,5.98,False,99.8,13,58.2,6.24
+Honda Jazz,0,245617,Full,4,0,5,Good,Available,Diesel,2611,6,False,,4.68,True,99.1,4,68.5,17.89
+Skoda Slavia,1,81095,Basic,3,2,21,Good,Available,Diesel,1336,4,False,,7.22,True,95.9,7,29.9,8.39
+Volkswagen Vento,13,101739,Basic,2,4,18,Poor,Available,Petrol,1105,3,False,,6.47,True,88.5,1,47.7,9.29
+Maruti Suzuki Dzire,2,181673,Electrical,4,1,20,Good,Available,Petrol,1594,4,False,,4.38,False,92.1,13,60.2,16.98
+Hyundai Creta,6,198271,Basic,2,3,22,Good,Limited,Petrol,1528,4,False,,4.85,True,93.0,23,68.3,11.42
+Skoda Kushaq,7,119077,Basic,5,1,13,Average,Available,Petrol,1576,4,False,,5.53,True,98.0,9,54.3,15.84
+Toyota Glanza,3,116546,Electrical,2,2,5,Good,Available,Petrol,2091,6,False,,6.01,True,98.7,2,38.7,11.19
+Mahindra XUV700,6,236267,Electrical,2,4,11,Poor,Not Available,Diesel,2141,6,False,,3.88,True,93.4,2,71.8,27.47
+Toyota Fortuner,12,59517,Full,1,4,3,Average,Available,Diesel,2248,4,False,,5.07,False,100.5,2,41.1,10.95
+Honda Jazz,3,140606,Transmission,2,5,8,Good,Available,Petrol,1562,4,False,,4.98,True,89.8,19,51.1,16.43
+Kia Seltos,12,128425,Engine Repair,1,2,15,Average,Available,Petrol,1430,4,False,,4.76,True,88.7,8,59.1,20.02
+Tata Nexon,2,178663,Full,0,5,19,Good,Available,Diesel,2284,6,False,,5.53,True,91.3,10,41.5,10.96
+Ford Aspire,8,11915,Engine Repair,4,5,11,Good,Limited,Petrol,1668,4,False,,7.06,True,86.0,23,31.7,17.78
+Hyundai Venue,11,122594,Basic,2,1,1,Average,Limited,Diesel,2108,6,True,,5.49,True,84.1,3,57.8,12.13
+Kia Sonet,3,200249,Painting,2,1,2,Poor,Not Available,Petrol,1483,4,True,,4.75,True,90.1,11,70.4,75.87
+Tata Harrier,4,176123,Basic,2,4,2,Average,Available,Electric,0,0,False,47.9,5.03,True,54.7,18,59.2,12.05
+Volkswagen Polo,3,107343,Basic,3,5,19,Good,Limited,Petrol,1548,4,False,,5.38,True,86.9,17,38.0,10.18
+Volkswagen Vento,6,88205,Full,2,2,19,Good,Available,Petrol,1707,4,False,,6.77,True,89.7,16,41.8,11.01
+Ford Figo,7,183244,Basic,2,0,3,Average,Available,Hybrid,1871,4,False,,4.71,True,88.1,21,72.2,9.84
+Kia Sonet,0,137019,Full,2,2,3,Good,Available,Diesel,1480,4,False,,6.16,True,99.6,21,37.4,13.67
+Toyota Fortuner,14,102639,Full,2,0,17,Good,Available,Petrol,1484,4,True,,4.79,True,92.8,7,66.7,11.35
+Ford Aspire,4,212957,Full,3,1,18,Good,Available,Petrol,1058,3,False,,4.37,True,86.1,4,67.1,13.36
+Honda City,10,94593,Basic,0,1,17,Average,Available,Diesel,2385,4,True,,5.61,False,82.9,2,40.4,4.76
+Skoda Rapid,4,162164,Electrical,2,2,17,Average,Available,Diesel,1520,4,False,,5.21,True,91.9,7,54.2,12.7
+Honda Jazz,0,116881,Full,2,1,6,Average,Available,Petrol,1266,4,False,,6.73,True,94.8,2,30.6,9.82
+Mahindra Scorpio,13,148967,Electrical,1,5,17,Good,Available,Diesel,1799,4,False,,4.48,True,87.8,10,61.5,11.59
+Tata Altroz,5,13543,Electrical,3,4,15,Average,Available,Petrol,1757,4,False,,7.63,False,88.1,12,21.2,12.74
+Volkswagen Taigun,11,189273,Full,2,3,4,Good,Not Available,Petrol,1126,3,False,,4.58,True,87.5,14,74.8,20.2
+Toyota Innova,11,179173,Basic,0,2,2,Average,Available,Diesel,2219,6,False,,4.77,True,92.5,5,66.0,9.77
+Tata Harrier,7,211688,Full,2,2,8,Average,Available,Petrol,1509,4,False,,3.58,True,85.4,5,65.5,13.54
+Honda Amaze,4,219389,Engine Repair,1,3,21,Average,Limited,Diesel,1206,4,False,,5.18,True,86.5,21,56.3,27.18
+Maruti Suzuki Celerio,8,228167,Basic,1,2,12,Good,Available,Diesel,1496,4,True,,3.9,False,94.8,11,68.8,11.0
+Skoda Kushaq,7,197033,Basic,1,2,17,Good,Available,Petrol,1562,4,False,,3.68,True,93.6,0,72.4,9.11
+Skoda Kushaq,5,96109,Painting,4,1,12,Poor,Limited,Petrol,1664,4,True,,5.51,False,89.9,22,47.6,44.07
+Tata Harrier,0,177881,Basic,2,2,18,Good,Available,Petrol,1942,4,False,,4.66,True,98.9,13,52.5,7.89
+Mahindra XUV700,9,99339,Basic,1,5,20,Average,Available,Petrol,1483,4,False,,5.32,True,97.0,20,47.6,7.72
+Hyundai Creta,9,202241,Basic,1,4,10,Good,Available,Petrol,1666,4,False,,4.31,True,81.8,8,67.9,11.07
+Maruti Suzuki Dzire,12,210053,Basic,3,5,19,Average,Available,Petrol,1245,4,False,,3.37,False,83.8,19,72.9,13.13
+Hyundai i20,9,125807,Full,7,5,22,Average,Available,Diesel,2214,6,False,,5.74,True,89.9,17,64.9,15.72
+Ford Ecosport,7,6794,Engine Repair,4,1,6,Poor,Available,Diesel,2773,6,False,,6.64,False,92.6,0,30.3,23.14
+Ford Ecosport,3,120511,Full,2,3,19,Poor,Available,Petrol,1192,3,True,,5.78,False,97.6,13,35.4,12.55
+Ford Aspire,2,41485,Electrical,1,4,15,Good,Available,Hybrid,1847,4,False,,7.8,True,93.6,20,15.8,13.48
+Kia Seltos,6,77822,Engine Repair,1,3,22,Good,Available,Petrol,1508,4,False,,6.74,False,90.1,1,24.1,12.54
+Toyota Urban Cruiser,6,227046,Full,1,4,18,Good,Available,Petrol,1382,4,True,,3.97,True,91.9,19,61.7,12.05
+Toyota Urban Cruiser,5,77514,Full,3,4,18,Good,Available,Petrol,1388,4,False,,6.37,False,89.5,14,46.5,9.78
+Kia Seltos,0,11824,Electrical,1,5,1,Poor,Available,Diesel,2387,6,False,,7.7,False,89.6,2,14.7,13.54
+Hyundai Venue,7,82596,Transmission,1,0,12,Average,Available,Hybrid,1484,4,False,,5.65,True,97.7,6,30.6,38.5
+Tata Altroz,13,120854,Full,4,0,24,Average,Limited,Petrol,1591,4,False,,5.88,False,90.9,4,65.4,8.52
+Hyundai Venue,9,226411,Full,2,2,24,Good,Available,Petrol,1345,4,False,,3.31,True,87.0,3,77.2,12.65
+Maruti Suzuki Baleno,9,61375,Electrical,3,0,18,Good,Available,Petrol,1523,4,False,,6.65,True,97.1,18,38.6,14.05
+Honda City,14,10556,Full,1,0,6,Good,Limited,Petrol,1145,3,False,,5.51,True,88.2,19,37.2,7.67
+Ford Figo,9,76581,Basic,4,0,1,Average,Limited,Hybrid,1856,4,True,,6.81,True,105.1,1,43.4,18.62
+Volkswagen Vento,13,166459,Transmission,5,0,6,Average,Available,Petrol,1673,4,False,,3.9,True,101.5,18,73.1,28.19
+Kia Seltos,8,227395,Basic,2,0,18,Average,Available,Electric,0,0,False,65.1,3.06,True,53.4,10,66.0,8.37
+Toyota Urban Cruiser,2,48604,Transmission,2,4,22,Poor,Limited,Diesel,2007,4,False,,6.73,False,81.3,0,27.4,38.95
+Kia Seltos,2,142528,Basic,2,4,2,Good,Available,Diesel,2258,4,False,,5.54,False,99.9,21,48.5,7.87
+Ford Aspire,3,17888,Electrical,1,3,7,Good,Available,Petrol,1236,4,True,,7.56,False,96.7,13,19.5,9.46
+Mahindra Bolero,6,171546,Engine Repair,1,3,20,Good,Available,Diesel,1515,4,False,,4.81,True,93.8,16,46.7,23.44
+Tata Harrier,14,225639,Basic,2,2,3,Average,Available,Diesel,2424,4,False,,3.54,True,92.6,20,82.0,14.02
+Ford Ecosport,9,212745,Engine Repair,5,4,3,Good,Available,Hybrid,2143,6,True,,4.66,True,83.2,11,73.8,23.28
+Maruti Suzuki Baleno,6,120879,Basic,0,0,14,Good,Available,Diesel,1957,4,False,,6.58,False,89.0,1,48.7,3.07
+Kia Seltos,9,141490,Engine Repair,4,5,16,Good,Available,Diesel,1681,4,False,,4.07,True,91.5,11,59.3,18.37
+Tata Altroz,2,19914,Basic,1,3,5,Good,Limited,Petrol,1463,4,False,,7.12,True,94.4,13,20.5,6.69
+Maruti Suzuki Swift,12,98639,Basic,1,1,10,Good,Available,Petrol,1432,4,True,,5.78,True,93.1,10,56.7,8.67
+Mahindra Bolero,2,236172,Basic,2,0,5,Average,Available,Petrol,1711,4,False,,3.88,False,88.4,10,65.4,8.52
+Hyundai Creta,4,147698,Basic,2,4,1,Average,Available,Electric,0,0,True,66.5,6.41,False,61.5,15,48.5,12.48
+Toyota Innova,3,11064,Transmission,4,4,16,Average,Available,Diesel,1989,4,False,,8.01,False,103.2,2,14.0,30.3
+Mahindra Scorpio,8,197032,Basic,3,4,13,Good,Limited,Petrol,1386,4,False,,4.71,True,91.8,14,68.9,14.24
+Skoda Rapid,6,244388,Transmission,2,5,3,Good,Available,Petrol,1495,4,False,,3.79,True,91.0,17,80.6,22.96
+Hyundai Verna,9,207827,Full,1,0,17,Good,Available,Hybrid,1734,4,False,,4.62,False,105.8,4,76.7,11.04
+Toyota Urban Cruiser,2,170036,Basic,2,4,24,Good,Limited,Diesel,1817,4,True,,5.68,True,89.8,19,42.5,9.94
+Mahindra Scorpio,5,144524,Full,3,2,5,Poor,Available,Diesel,1879,4,False,,5.63,True,90.2,4,49.2,18.93
+Skoda Kushaq,5,22585,Full,1,1,17,Good,Available,Petrol,1092,3,False,,7.92,False,95.7,22,24.9,6.03
+Kia Seltos,6,136831,Basic,4,3,22,Poor,Not Available,Petrol,1753,4,False,,5.77,True,97.3,20,46.7,16.02
+Tata Nexon,6,94591,Painting,2,4,16,Good,Limited,Petrol,1636,4,False,,5.51,True,95.3,20,41.1,42.01
+Kia Seltos,14,104769,Basic,2,3,19,Average,Limited,Diesel,1893,4,True,,4.79,True,94.0,11,66.1,11.03
+Hyundai Verna,4,207304,Engine Repair,1,3,23,Good,Limited,Petrol,1698,4,False,,4.99,False,89.9,16,64.0,19.19
+Kia Seltos,5,148428,Basic,1,5,11,Poor,Available,Petrol,1434,4,False,,5.31,False,89.8,1,50.3,8.53
+Kia Sonet,13,207016,Transmission,0,1,13,Poor,Available,Petrol,1791,4,False,,3.86,True,89.3,13,80.6,28.72
+Maruti Suzuki Baleno,2,242334,Transmission,2,4,8,Good,Available,Petrol,1413,4,False,,3.9,True,85.1,15,67.2,31.99
+Volkswagen Taigun,14,224550,Painting,4,5,22,Average,Not Available,Diesel,2358,6,True,,4.1,False,90.7,2,81.6,70.28
+Honda Jazz,9,49168,Engine Repair,2,3,17,Good,Limited,Petrol,1410,4,False,,6.45,True,94.6,2,34.6,16.93
+Maruti Suzuki Swift,13,151015,Full,2,3,20,Good,Available,Hybrid,2477,6,False,,4.96,False,88.6,18,63.8,11.14
+Mahindra XUV700,7,203633,Engine Repair,3,5,17,Average,Available,Petrol,1451,4,False,,4.38,True,92.9,4,70.4,34.67
+Skoda Kushaq,14,74213,Basic,5,0,20,Poor,Available,Petrol,1637,4,False,,5.41,False,95.6,9,55.6,11.11
+Hyundai Venue,5,113603,Engine Repair,1,5,10,Average,Available,Petrol,1419,4,False,,5.91,True,89.7,10,52.1,22.6
+Hyundai Creta,0,105287,Basic,2,4,15,Average,Available,Diesel,2077,4,True,,6.38,False,91.9,9,30.1,9.67
+Skoda Rapid,1,222127,Electrical,3,2,14,Good,Limited,Hybrid,1429,4,False,,4.55,False,88.9,3,61.5,14.64
+Mahindra Thar,5,50967,Full,2,3,15,Good,Available,Hybrid,1990,4,False,,7.06,True,96.7,14,28.4,10.1
+Tata Tiago,1,234173,Painting,2,5,1,Poor,Available,Diesel,2489,4,True,,3.81,True,85.3,2,61.8,69.24
+Volkswagen Taigun,12,111289,Electrical,2,0,7,Good,Available,Diesel,2334,6,False,,4.9,False,85.4,9,66.6,14.09
+Skoda Rapid,13,171971,Engine Repair,3,3,18,Good,Not Available,Diesel,2155,4,False,,4.46,True,90.7,22,77.4,30.87
+Honda WR-V,13,7899,Basic,5,3,9,Average,Available,Hybrid,1822,4,False,,6.85,False,87.3,20,33.7,10.31
+Kia Seltos,9,126516,Basic,0,2,16,Good,Limited,Petrol,1720,4,False,,5.17,True,97.6,19,58.5,6.62
+Kia Carens,4,248903,Basic,2,0,22,Good,Available,Petrol,1563,4,False,,3.62,True,93.2,0,80.0,10.3
+Volkswagen Polo,14,161774,Electrical,2,1,13,Good,Available,Diesel,1924,4,False,,4.85,True,96.5,9,67.8,15.54
+Volkswagen Vento,14,137758,Basic,5,0,23,Good,Available,Diesel,1677,4,False,,4.18,True,92.3,11,74.7,12.39
+Kia Carens,8,154847,Electrical,4,1,22,Poor,Available,Petrol,1439,4,False,,4.38,True,91.8,15,62.5,17.3
+Skoda Kushaq,7,212865,Transmission,1,2,20,Good,Limited,Diesel,2200,6,True,,4.69,True,88.7,1,75.5,22.97
+Ford Figo,8,76354,Basic,0,4,14,Average,Available,Diesel,1596,4,False,,5.55,False,91.4,6,28.7,6.54
+Toyota Fortuner,13,111295,Basic,2,2,18,Good,Available,Diesel,1389,4,False,,5.82,True,95.4,15,73.1,9.37
+Tata Altroz,8,214469,Basic,2,4,9,Average,Limited,Petrol,1776,4,False,,4.46,True,91.6,9,74.4,15.14
+Volkswagen Vento,14,138080,Basic,3,3,16,Average,Available,Petrol,1391,4,False,,5.03,True,87.8,16,63.2,12.19
+Mahindra Thar,10,96324,Basic,2,5,3,Average,Available,Electric,0,0,False,80.3,5.86,False,61.4,14,48.4,9.72
+Maruti Suzuki Celerio,7,143064,Basic,1,4,1,Poor,Available,Petrol,1431,4,False,,5.32,False,92.4,11,48.8,8.62
+Ford Figo,12,29476,Engine Repair,1,3,5,Good,Available,Diesel,1746,4,False,,7.01,False,98.9,12,38.5,7.93
+Ford Aspire,6,194168,Basic,1,2,21,Good,Available,Petrol,1615,4,False,,5.21,False,85.2,13,60.5,5.78
+Skoda Slavia,7,229098,Basic,0,5,9,Average,Available,Diesel,2390,4,False,,3.01,True,102.2,16,70.4,10.95
+Mahindra Thar,1,151397,Engine Repair,2,1,17,Good,Limited,Diesel,2091,4,False,,5.66,True,95.1,8,35.6,28.91
+Honda City,6,184266,Basic,2,2,4,Good,Available,Petrol,1793,4,True,,4.36,True,97.1,8,54.6,11.94
+Maruti Suzuki Dzire,5,134789,Electrical,4,2,3,Average,Available,Petrol,1336,4,False,,6.06,False,96.9,18,49.5,12.7
+Honda Amaze,12,183507,Electrical,4,1,6,Good,Available,Hybrid,2073,6,True,,4.25,False,96.4,13,73.2,22.35
+Hyundai Creta,13,193218,Basic,2,1,3,Average,Limited,Diesel,2598,4,True,,4.0,False,86.1,10,76.3,14.86
+Tata Nexon,5,223837,Transmission,3,2,16,Average,Available,Diesel,2758,4,False,,3.54,True,92.7,4,67.6,36.05
+Mahindra Bolero,6,36501,Full,4,3,16,Good,Available,Diesel,2370,4,False,,6.82,True,89.0,5,26.0,13.81
+Kia Sonet,2,159484,Painting,3,3,24,Good,Limited,Petrol,1778,4,False,,6.18,False,92.4,7,51.3,48.31
+Skoda Slavia,9,39993,Electrical,2,5,14,Average,Available,Petrol,1582,4,False,,7.04,False,91.7,5,36.0,15.39
+Toyota Innova,3,218384,Full,5,4,15,Poor,Not Available,Diesel,1471,4,False,,4.05,True,96.1,16,73.2,32.79
+Mahindra Bolero,2,197302,Basic,1,5,6,Average,Available,Petrol,1593,4,False,,5.28,False,88.8,23,53.7,10.22
+Kia Seltos,13,172557,Engine Repair,0,3,3,Average,Not Available,Diesel,2263,6,False,,4.3,True,87.3,19,73.9,17.76
+Skoda Rapid,3,85849,Basic,0,4,14,Average,Available,Diesel,1911,4,True,,6.82,True,96.1,4,27.4,7.16
+Maruti Suzuki Swift,7,134618,Electrical,0,0,8,Good,Available,Petrol,1396,4,False,,5.79,True,93.3,10,44.0,15.6
+Volkswagen Vento,13,241673,Full,4,3,16,Average,Limited,Petrol,1558,4,False,,4.23,False,97.6,6,90.7,17.51
+Hyundai Creta,11,241758,Transmission,1,0,8,Average,Available,Petrol,1704,4,True,,3.4,True,88.7,23,91.7,28.55
+Ford Figo,2,29561,Basic,1,1,19,Poor,Limited,Hybrid,1069,3,False,,7.35,False,91.3,13,17.3,4.12
+Maruti Suzuki Dzire,8,111987,Full,0,5,24,Good,Limited,Electric,0,0,False,70.8,5.38,True,51.6,2,36.5,8.86
+Hyundai i20,14,174070,Full,3,1,4,Average,Limited,Hybrid,1712,4,False,,4.06,True,91.5,13,63.6,20.12
+Volkswagen Vento,11,146555,Full,1,2,9,Poor,Available,Diesel,2347,4,True,,5.12,False,83.9,18,55.4,16.1
+Kia Carnival,13,49750,Basic,0,2,16,Average,Available,Hybrid,1178,3,False,,5.91,True,84.8,7,39.6,5.83
+Kia Carnival,14,156992,Full,0,1,8,Average,Available,Electric,0,0,False,43.5,4.08,True,57.0,21,69.8,11.78
+Volkswagen Vento,6,5573,Basic,0,5,23,Average,Available,Petrol,1488,4,False,,7.92,True,91.5,12,16.0,4.26
+Honda Jazz,12,18488,Basic,0,4,22,Good,Available,Electric,0,0,False,73.2,7.52,True,53.0,13,24.4,3.92
+Mahindra XUV700,6,67830,Full,3,5,19,Good,Not Available,Petrol,1441,4,False,,7.03,True,92.3,19,41.8,15.15
+Tata Tiago,9,237092,Full,2,2,21,Good,Available,Petrol,1312,4,False,,4.6,True,87.9,9,69.0,9.33
+Toyota Urban Cruiser,11,134924,Transmission,0,3,19,Good,Limited,Diesel,2082,6,True,,5.2,False,91.4,14,69.7,34.52
+Ford Ecosport,8,220756,Full,1,0,4,Good,Not Available,Petrol,1109,3,False,,4.92,True,95.6,10,69.0,16.01
+Tata Harrier,1,248337,Basic,3,3,9,Good,Available,Petrol,1141,3,False,,4.22,False,99.2,10,67.4,9.72
+Kia Carens,1,87760,Full,3,1,9,Good,Available,Petrol,1196,3,False,,5.6,True,89.5,14,40.1,14.12
+Ford Figo,2,157303,Transmission,2,3,1,Good,Limited,Diesel,1958,4,True,,5.67,True,90.7,9,57.7,30.51
+Tata Nexon,1,210768,Basic,3,5,17,Good,Available,Diesel,1955,4,True,,4.53,True,105.8,3,64.7,13.85
+Tata Harrier,6,14291,Transmission,1,2,24,Average,Available,Petrol,1440,4,False,,7.54,False,91.8,19,16.6,22.69
+Kia Carnival,7,207452,Basic,1,1,11,Good,Available,Petrol,1574,4,False,,4.18,True,83.8,19,58.4,9.57
+Toyota Glanza,5,159497,Engine Repair,4,0,11,Good,Available,Diesel,1458,4,False,,4.77,True,96.4,14,60.1,29.22
+Kia Seltos,14,160358,Basic,4,0,9,Good,Available,Diesel,1909,4,False,,4.44,True,91.6,1,82.2,14.11
+Volkswagen Polo,10,204963,Transmission,2,2,5,Good,Available,Petrol,2220,6,False,,4.41,False,97.7,0,78.6,26.52
+Honda Jazz,6,126830,Electrical,1,3,19,Average,Available,Diesel,2399,4,False,,6.19,False,92.9,11,46.7,11.85
+Tata Altroz,1,58125,Full,1,1,22,Average,Available,Diesel,1359,4,False,,6.78,False,94.9,17,20.4,4.39
+Kia Carnival,5,226631,Transmission,1,3,6,Average,Available,Petrol,1885,4,False,,4.32,True,94.6,6,64.5,34.49
+Maruti Suzuki Baleno,12,236304,Engine Repair,2,4,9,Good,Limited,Diesel,1677,4,False,,3.13,True,98.4,19,87.8,30.98
+Mahindra Thar,3,36116,Engine Repair,3,4,12,Average,Available,Hybrid,1741,4,False,,6.9,False,95.1,21,21.3,20.25
+Volkswagen Polo,10,185046,Basic,0,5,1,Average,Available,Petrol,1697,4,True,,4.43,True,79.9,0,65.1,12.98
+Hyundai Creta,11,32866,Full,1,2,8,Poor,Available,Diesel,1865,4,True,,6.72,True,86.1,10,35.1,9.85
+Tata Tiago,11,213105,Painting,5,1,2,Average,Limited,Petrol,1419,4,False,,3.55,True,97.6,7,86.1,54.0
+Mahindra Bolero,10,145012,Basic,2,3,24,Good,Not Available,Hybrid,2227,4,False,,5.78,False,89.8,13,57.6,10.27
+Hyundai i20,9,107488,Full,2,4,12,Average,Available,Electric,0,0,False,35.0,5.35,True,60.0,2,50.9,13.69
+Skoda Kushaq,9,192721,Basic,1,3,1,Average,Available,Petrol,1679,4,False,,4.24,True,83.2,1,68.6,12.27
+Toyota Urban Cruiser,5,148878,Engine Repair,2,2,24,Good,Available,Petrol,1514,4,False,,6.19,True,82.7,6,46.6,22.69
+Toyota Fortuner,9,147607,Basic,3,1,8,Average,Available,Diesel,1304,4,False,,4.06,True,90.9,0,56.6,8.9
+Honda Amaze,3,219300,Engine Repair,2,2,22,Good,Available,Diesel,1989,4,True,,4.63,True,96.5,13,61.0,18.12
+Tata Harrier,3,64135,Basic,5,4,14,Good,Not Available,Diesel,2173,4,True,,6.59,True,83.7,13,30.6,15.95
+Mahindra XUV700,3,126297,Electrical,2,3,22,Good,Available,Petrol,1840,4,False,,5.57,False,95.3,10,37.1,7.07
+Skoda Rapid,14,22004,Engine Repair,1,3,6,Good,Available,Diesel,2063,4,False,,6.41,True,94.6,6,41.3,16.29
+Mahindra XUV700,0,38374,Engine Repair,4,3,17,Average,Available,Petrol,1594,4,False,,6.33,True,81.5,19,24.8,25.15
+Maruti Suzuki Swift,1,5883,Full,2,2,6,Good,Available,Petrol,1268,4,False,,7.1,False,94.5,0,4.9,5.53
+Ford Endeavour,7,217779,Engine Repair,2,0,22,Poor,Available,Petrol,1828,4,True,,3.9,True,85.8,20,64.9,30.09
+Toyota Fortuner,14,80868,Electrical,0,3,3,Good,Not Available,Petrol,1606,4,True,,5.71,True,88.2,21,41.1,16.32
+Tata Tiago,4,210770,Full,1,5,10,Poor,Available,Hybrid,1767,4,False,,4.26,False,88.7,3,69.7,15.68
+Toyota Fortuner,9,132374,Basic,1,4,17,Average,Available,Hybrid,1950,4,False,,5.25,False,93.0,12,43.2,7.11
+Maruti Suzuki Dzire,9,19409,Full,0,1,11,Good,Available,Hybrid,1816,4,False,,6.39,False,83.3,5,22.3,6.37
+Ford Ecosport,6,231862,Full,3,4,14,Good,Not Available,Petrol,1529,4,False,,3.52,True,93.5,13,79.4,19.04
+Volkswagen Polo,4,165328,Full,1,4,5,Average,Available,Petrol,1367,4,False,,4.35,True,94.8,10,56.0,12.08
+Mahindra Bolero,12,169479,Basic,4,5,13,Good,Available,Hybrid,1846,4,True,,3.91,True,89.1,9,80.2,15.63
+Mahindra XUV700,2,123023,Full,2,0,21,Average,Available,Petrol,1737,4,True,,5.89,True,87.3,21,33.7,10.63
+Toyota Urban Cruiser,14,229737,Basic,1,4,19,Good,Available,Diesel,2489,6,True,,4.14,True,100.4,0,79.3,11.84
+Tata Nexon,12,157564,Full,1,1,13,Good,Limited,Petrol,1515,4,False,,4.68,False,81.8,8,59.4,9.31
+Ford Aspire,0,240392,Electrical,1,0,16,Poor,Available,Diesel,2600,6,True,,4.01,False,86.9,8,55.3,13.79
+Hyundai i20,8,192274,Electrical,1,4,14,Good,Available,Diesel,2174,6,False,,5.26,False,88.6,1,53.6,14.86
+Kia Seltos,2,117930,Painting,3,1,9,Good,Available,Petrol,1305,4,False,,6.55,False,90.9,19,54.2,35.68
+Kia Carnival,1,27350,Transmission,2,2,11,Average,Limited,Hybrid,1933,4,False,,8.01,False,89.2,17,14.8,18.75
+Kia Carnival,4,21645,Basic,1,1,22,Average,Available,Diesel,2179,6,True,,6.79,True,98.6,18,24.8,6.05
+Mahindra Thar,9,247413,Transmission,2,4,16,Average,Available,Petrol,1925,4,False,,3.88,True,84.7,7,80.9,24.1
+Mahindra Scorpio,4,233250,Full,5,5,16,Average,Available,Petrol,1926,4,False,,4.26,True,97.7,13,69.1,20.53
+Tata Tiago,6,206678,Engine Repair,0,4,12,Average,Available,Petrol,1405,4,False,,5.29,False,99.7,21,57.1,20.38
+Honda Amaze,9,241168,Engine Repair,4,3,15,Good,Limited,Electric,0,0,False,49.2,3.02,True,52.5,0,76.2,22.53
+Volkswagen Taigun,14,103096,Full,3,0,9,Good,Limited,Petrol,1135,3,False,,5.2,False,99.6,7,58.8,9.2
+Maruti Suzuki Celerio,2,223499,Full,2,1,1,Good,Available,Hybrid,1366,4,False,,4.57,True,93.1,5,59.8,14.58
+Mahindra Scorpio,0,64926,Full,4,5,3,Good,Available,Hybrid,1896,4,False,,7.7,False,95.8,2,20.8,15.3
+Toyota Fortuner,3,184725,Full,3,3,18,Good,Available,Electric,0,0,False,80.4,5.31,False,56.9,13,53.6,9.69
+Honda WR-V,10,79570,Full,0,1,13,Average,Available,Hybrid,2551,6,True,,6.57,True,85.6,17,42.1,11.14
+Hyundai Venue,3,225892,Transmission,0,1,23,Good,Available,Diesel,2061,4,False,,3.96,False,90.2,10,48.9,26.55
+Mahindra XUV700,2,74302,Full,1,2,18,Good,Available,Petrol,1143,3,False,,6.55,True,94.0,11,25.2,6.79
+Toyota Fortuner,1,176726,Full,3,5,5,Good,Available,Diesel,2204,6,True,,5.83,False,91.9,3,38.5,15.99
+Hyundai i20,7,240229,Basic,2,4,13,Good,Limited,Petrol,1694,4,False,,3.87,True,82.9,7,84.9,13.99
+Mahindra Thar,10,110862,Basic,2,3,3,Good,Available,Diesel,1807,4,False,,5.18,False,83.0,20,53.2,9.64
+Kia Carens,10,234132,Full,1,3,3,Good,Available,Diesel,2055,4,False,,3.68,True,90.9,1,80.2,13.13
+Tata Harrier,5,162107,Basic,4,4,4,Average,Not Available,Petrol,1538,4,False,,4.73,False,94.5,1,64.9,16.11
+Tata Harrier,6,62749,Basic,1,3,6,Poor,Not Available,Hybrid,861,3,False,,5.75,True,98.8,12,31.8,11.09
+Maruti Suzuki Celerio,4,141842,Engine Repair,1,5,24,Good,Limited,Diesel,2164,6,False,,5.65,False,96.7,17,33.1,13.56
+Toyota Fortuner,4,38924,Basic,3,5,7,Good,Available,Electric,0,0,True,62.7,6.87,False,57.8,18,19.0,11.09
+Kia Carens,1,62704,Engine Repair,2,4,3,Good,Available,Hybrid,1749,4,False,,6.75,True,95.7,11,31.9,22.42
+Hyundai Venue,1,246572,Basic,1,3,15,Good,Available,Hybrid,1845,4,False,,4.62,True,84.9,1,72.2,10.74
+Tata Tiago,0,23080,Engine Repair,1,1,5,Good,Available,Diesel,1958,4,False,,7.48,False,82.3,23,0.1,17.44
+Skoda Slavia,8,97040,Basic,3,2,16,Good,Available,Petrol,1282,4,True,,5.63,False,90.2,15,55.1,8.89
+Ford Endeavour,8,14151,Basic,2,1,21,Good,Available,Hybrid,2091,4,True,,7.62,True,83.5,9,25.7,5.74
+Kia Seltos,14,14653,Basic,3,3,10,Average,Available,Electric,0,0,True,43.0,6.92,False,57.3,0,41.5,8.37
+Kia Carens,13,54047,Electrical,4,4,18,Good,Limited,Petrol,1499,4,False,,6.24,False,91.9,18,37.5,19.83
+Toyota Innova,2,239466,Engine Repair,1,4,23,Good,Not Available,Petrol,1364,4,True,,4.04,False,90.9,20,57.5,27.16
+Hyundai Venue,10,158431,Full,3,0,15,Average,Available,Petrol,1629,4,False,,4.9,False,93.5,21,72.3,9.02
+Honda Amaze,14,164083,Electrical,2,5,8,Poor,Available,Petrol,1445,4,False,,4.67,True,96.2,18,69.7,19.49
+Toyota Innova,8,198135,Basic,2,5,19,Good,Limited,Petrol,1292,4,True,,4.04,True,91.8,0,71.3,13.32
+Tata Nexon,13,246911,Full,2,1,18,Good,Available,Petrol,1500,4,False,,3.86,True,90.3,11,83.1,13.97
+Toyota Innova,3,41774,Transmission,4,2,10,Good,Available,Petrol,1512,4,False,,6.4,False,89.8,14,29.0,24.2
+Tata Nexon,6,110315,Full,1,2,13,Average,Not Available,Petrol,1607,4,False,,5.37,True,99.6,18,32.3,12.69
+Ford Aspire,10,33121,Full,2,2,16,Good,Available,Hybrid,1558,4,False,,7.06,True,87.9,3,40.8,8.56
+Kia Seltos,9,240095,Electrical,3,2,7,Average,Available,Petrol,1532,4,False,,3.04,False,93.5,1,81.4,16.48
+Mahindra XUV700,11,48658,Basic,3,5,5,Average,Available,Electric,0,0,False,53.6,6.16,False,65.2,4,34.8,9.89
+Ford Ecosport,12,102160,Basic,1,3,12,Poor,Available,Hybrid,1339,4,False,,5.75,False,83.0,13,47.5,7.85
+Maruti Suzuki Swift,3,20373,Full,4,3,12,Average,Available,Petrol,1618,4,False,,8.11,False,89.1,2,23.6,11.23
+Toyota Innova,7,226761,Engine Repair,0,5,11,Average,Limited,Electric,0,0,False,77.3,4.61,False,59.1,8,70.1,27.59
+Kia Carens,5,102983,Transmission,0,0,10,Average,Available,Petrol,1020,3,False,,5.96,False,90.4,4,32.6,22.78
+Maruti Suzuki Dzire,10,77155,Basic,2,4,14,Good,Available,Diesel,1996,4,False,,5.74,True,97.2,23,46.3,10.92
+Ford Aspire,12,113622,Transmission,1,0,4,Average,Available,Petrol,1554,4,True,,5.0,True,91.9,22,56.1,33.41
+Hyundai i20,10,168800,Basic,1,2,9,Good,Available,Diesel,1546,4,False,,3.57,True,88.5,14,56.6,9.22
+Ford Figo,10,237124,Full,0,4,18,Good,Available,Petrol,886,3,False,,2.99,True,93.2,22,70.9,10.65
+Hyundai i20,5,127282,Electrical,3,1,21,Good,Available,Diesel,2484,6,True,,6.02,False,94.1,11,50.2,10.61
+Hyundai Verna,4,94129,Basic,1,4,19,Average,Limited,Hybrid,1199,3,False,,6.29,True,95.1,14,31.0,8.03
+Mahindra Bolero,2,164283,Full,2,3,14,Average,Available,Hybrid,1350,4,False,,4.07,True,95.7,9,43.6,14.46
+Honda City,7,132871,Basic,0,2,22,Average,Available,Petrol,1133,3,False,,5.36,False,86.9,3,48.4,3.86
+Ford Ecosport,1,142245,Full,3,0,23,Average,Available,Petrol,1854,4,True,,5.17,False,95.6,16,50.6,9.9
+Tata Altroz,9,188460,Full,1,3,20,Good,Available,Petrol,1506,4,False,,4.16,True,93.0,11,69.8,10.76
+Kia Carens,14,26598,Full,2,1,24,Good,Limited,Diesel,2379,6,False,,6.49,True,89.3,9,37.0,7.57
+Mahindra Scorpio,2,239211,Basic,1,2,10,Good,Limited,Hybrid,1661,4,False,,4.16,False,97.2,16,68.3,10.03
+Mahindra Scorpio,8,226131,Full,0,4,3,Average,Limited,Diesel,1546,4,False,,5.43,False,100.7,9,66.1,11.55
+Tata Altroz,8,214526,Basic,5,1,1,Poor,Available,Diesel,2225,4,True,,3.59,True,90.7,20,65.7,18.0
+Volkswagen Vento,6,189898,Engine Repair,1,0,19,Good,Not Available,Diesel,2073,4,True,,4.18,True,87.1,1,60.7,29.49
+Maruti Suzuki Dzire,5,172275,Full,2,2,5,Good,Not Available,Petrol,1404,4,True,,5.39,True,91.2,4,59.2,18.74
+Toyota Urban Cruiser,6,121754,Full,0,5,17,Average,Not Available,Diesel,1645,4,False,,5.95,True,97.0,4,45.0,10.19
+Maruti Suzuki Swift,1,125019,Transmission,1,1,14,Good,Available,Hybrid,1976,4,False,,5.71,True,86.2,4,44.7,25.88
+Ford Ecosport,3,69597,Basic,3,4,4,Average,Available,Petrol,1515,4,False,,6.15,True,99.6,18,24.4,12.54
+Tata Altroz,13,240813,Basic,3,0,23,Good,Available,Petrol,1623,4,False,,3.96,True,90.3,13,89.1,10.52
+Skoda Rapid,4,230405,Basic,2,1,11,Good,Limited,Petrol,1462,4,False,,4.89,False,95.4,18,73.3,9.31
+Hyundai i20,10,50347,Electrical,3,4,12,Poor,Available,Diesel,1906,4,True,,6.99,False,90.9,1,40.2,15.71
+Maruti Suzuki Baleno,4,116493,Basic,3,0,18,Average,Available,Petrol,1147,3,False,,6.16,True,89.4,18,33.2,8.4
+Maruti Suzuki Swift,11,184810,Basic,3,0,24,Average,Available,Hybrid,1251,4,False,,5.21,False,93.5,3,75.1,10.38
+Toyota Innova,3,144022,Basic,1,0,8,Good,Limited,Diesel,1845,4,False,,4.5,True,80.3,5,49.0,8.02
+Kia Carnival,7,65170,Engine Repair,1,1,11,Good,Available,Diesel,2357,4,True,,5.88,False,80.9,13,39.0,13.35
+Skoda Kushaq,8,28537,Full,1,5,4,Poor,Available,Petrol,1491,4,False,,6.29,True,84.6,21,27.1,9.5
+Hyundai Creta,11,74722,Basic,0,1,21,Good,Available,Hybrid,1288,4,False,,6.78,False,101.4,0,30.7,1.5
+Volkswagen Vento,4,55039,Electrical,1,4,19,Average,Available,Petrol,2124,4,False,,6.52,True,101.7,19,20.1,9.22
+Hyundai i20,13,18272,Basic,4,3,3,Average,Available,Petrol,1944,4,True,,5.51,False,90.0,3,45.6,12.56
+Volkswagen Polo,10,8901,Basic,2,0,21,Good,Available,Petrol,1446,4,False,,7.06,False,89.4,21,26.3,4.4
+Skoda Slavia,6,49980,Basic,6,3,7,Poor,Available,Diesel,1593,4,False,,7.06,True,97.6,5,38.9,19.96
+Honda Amaze,11,91949,Basic,1,4,9,Good,Not Available,Petrol,1607,4,False,,5.58,True,93.1,22,38.9,11.37
+Honda Amaze,13,18001,Full,2,4,14,Average,Available,Petrol,1780,4,False,,6.35,False,87.1,12,39.9,5.26
+Toyota Urban Cruiser,14,83219,Basic,1,5,3,Good,Available,Petrol,1333,4,False,,6.27,False,95.3,10,45.6,7.27
+Mahindra Thar,8,207731,Full,2,2,23,Good,Available,Petrol,1628,4,False,,4.43,True,96.2,3,64.0,10.53
+Ford Ecosport,2,104201,Engine Repair,2,3,10,Good,Available,Petrol,993,3,False,,6.66,True,97.2,11,31.7,16.09
+Skoda Rapid,14,35714,Basic,0,3,6,Good,Limited,Petrol,1234,4,False,,5.9,False,94.5,6,42.6,5.78
+Toyota Glanza,4,133072,Full,3,1,14,Good,Not Available,Petrol,1791,4,False,,5.13,True,85.8,20,51.5,17.45
+Tata Tiago,11,45744,Transmission,2,3,16,Good,Available,Petrol,1354,4,False,,6.16,False,99.2,11,40.5,20.76
+Honda WR-V,12,145854,Full,3,3,8,Average,Available,Diesel,1986,4,False,,5.73,True,87.3,23,68.1,16.02
+Tata Nexon,10,173484,Transmission,2,5,7,Good,Not Available,Petrol,1388,4,False,,4.67,True,88.5,23,66.0,45.87
+Skoda Rapid,3,231769,Engine Repair,1,1,12,Good,Limited,Diesel,2072,6,False,,4.33,True,87.4,16,60.2,25.79
+Volkswagen Polo,13,247313,Full,2,3,11,Good,Limited,Petrol,1843,4,False,,3.82,True,85.9,3,86.2,12.91
+Hyundai i20,6,212208,Electrical,2,5,11,Good,Not Available,Petrol,2078,4,False,,4.12,False,98.3,7,75.4,21.73
+Toyota Innova,11,223836,Basic,2,0,22,Good,Available,Petrol,840,3,False,,3.6,True,95.8,13,80.5,8.06
+Toyota Fortuner,3,226024,Full,1,4,14,Average,Limited,Diesel,1267,4,False,,5.1,False,83.6,13,62.9,12.83
+Kia Seltos,7,98790,Full,3,0,2,Average,Available,Petrol,1374,4,False,,6.05,True,87.9,15,51.7,12.74
+Kia Sonet,6,159599,Full,0,1,6,Average,Available,Petrol,1702,4,False,,5.02,True,94.7,13,62.3,10.26
+Skoda Kushaq,10,49631,Full,2,2,18,Good,Limited,Hybrid,1517,4,False,,6.49,True,89.0,9,31.2,8.31
+Maruti Suzuki Swift,13,247630,Engine Repair,2,0,20,Good,Available,Diesel,1782,4,False,,3.42,True,85.2,4,98.0,16.71
+Maruti Suzuki Dzire,1,213225,Engine Repair,3,5,18,Good,Available,Diesel,1840,4,True,,5.25,True,93.0,6,63.1,25.5
+Tata Altroz,14,28342,Transmission,1,3,21,Average,Available,Diesel,1242,4,False,,6.68,False,92.7,15,34.7,23.56
+Skoda Rapid,10,152925,Basic,0,4,8,Good,Available,Diesel,1668,4,False,,4.88,False,93.4,23,58.7,7.24
+Volkswagen Taigun,1,90340,Basic,3,3,20,Good,Available,Hybrid,1378,4,False,,6.57,True,88.4,9,30.9,6.33
+Kia Carens,4,19620,Full,5,4,23,Good,Available,Hybrid,1851,4,True,,7.7,False,84.8,7,30.0,12.72
+Maruti Suzuki Swift,1,46135,Basic,3,2,17,Average,Available,Hybrid,1561,4,False,,7.39,True,99.9,17,19.7,9.21
+Tata Tiago,8,40995,Basic,1,4,5,Poor,Limited,Petrol,1483,4,False,,5.67,False,92.9,4,31.8,5.69
+Skoda Rapid,7,194343,Full,1,5,21,Average,Available,Diesel,1930,4,True,,5.52,True,92.1,13,76.2,12.91
+Tata Harrier,4,109063,Full,2,4,4,Average,Available,Petrol,1822,4,False,,5.64,False,94.8,23,34.7,10.85
+Volkswagen Taigun,10,126517,Painting,2,0,14,Good,Available,Petrol,1574,4,False,,4.94,True,91.1,20,51.5,38.04
+Mahindra Scorpio,10,154825,Full,2,1,12,Good,Not Available,Petrol,1847,4,False,,4.75,False,91.1,10,56.9,12.66
+Hyundai i20,14,176946,Painting,1,0,2,Poor,Limited,Petrol,2081,4,False,,4.21,False,92.6,13,75.7,54.26
+Volkswagen Polo,6,114610,Engine Repair,2,0,17,Good,Not Available,Petrol,1874,4,False,,6.31,True,91.3,23,52.2,30.56
+Hyundai i20,2,32129,Painting,2,3,5,Good,Available,Hybrid,1418,4,False,,7.09,False,94.6,19,13.8,30.46
+Toyota Fortuner,7,48123,Basic,1,0,12,Good,Limited,Hybrid,1574,4,False,,6.3,True,88.4,17,31.9,4.93
+Kia Sonet,4,186919,Full,2,2,13,Average,Not Available,Petrol,1453,4,False,,4.48,True,98.4,16,49.6,14.35
+Kia Sonet,2,222354,Full,1,3,10,Average,Available,Petrol,1411,4,True,,4.15,True,89.9,19,60.3,14.31
+Mahindra Scorpio,5,98478,Electrical,0,1,19,Poor,Available,Petrol,1390,4,False,,5.78,True,89.5,22,23.9,10.64
+Volkswagen Taigun,1,109937,Engine Repair,2,0,18,Good,Available,Petrol,1678,4,False,,6.61,True,101.4,23,35.1,21.82
+Toyota Urban Cruiser,10,188317,Basic,4,5,1,Good,Limited,Petrol,1354,4,False,,3.69,True,93.4,5,78.7,19.08
+Maruti Suzuki Swift,3,12069,Full,2,5,12,Good,Available,Diesel,1690,4,False,,8.25,False,99.9,15,16.2,7.97
+Ford Figo,12,201242,Basic,1,3,22,Poor,Available,Petrol,1669,4,False,,3.93,True,81.3,10,80.7,10.81
+Hyundai Verna,0,89280,Basic,1,2,15,Average,Available,Petrol,1362,4,False,,6.31,True,95.8,18,31.1,5.91
+Ford Ecosport,0,71178,Basic,2,3,6,Average,Not Available,Petrol,1242,4,False,,7.49,True,83.5,9,25.1,10.93
+Maruti Suzuki Dzire,7,158421,Full,1,5,10,Good,Available,Diesel,2335,4,True,,4.6,True,87.1,19,62.5,15.79
+Honda City,11,75605,Basic,0,1,18,Poor,Available,Electric,0,0,False,58.9,6.15,True,48.8,2,47.0,5.75
+Skoda Kushaq,1,222045,Basic,1,4,15,Average,Available,Diesel,1646,4,False,,4.99,True,92.2,3,49.0,9.87
+Hyundai Creta,7,48489,Full,2,1,23,Average,Available,Hybrid,1323,4,False,,6.74,False,89.5,1,33.0,7.32
+Volkswagen Taigun,2,191414,Basic,1,5,16,Good,Available,Petrol,1618,4,False,,5.07,True,89.9,17,54.5,9.44
+Kia Carnival,10,79069,Full,1,1,23,Good,Available,Hybrid,1702,4,False,,6.37,False,94.3,20,44.2,6.97
+Mahindra Scorpio,8,182848,Full,4,3,3,Good,Available,Diesel,1863,4,True,,4.35,False,95.1,8,78.4,15.49
+Tata Altroz,12,5796,Full,0,4,15,Average,Not Available,Petrol,1526,4,False,,6.73,True,93.6,6,43.3,11.16
+Hyundai i20,6,125032,Full,4,1,21,Good,Limited,Electric,0,0,False,64.4,5.21,True,52.8,3,50.2,11.24
+Volkswagen Polo,1,126476,Basic,3,1,3,Good,Available,Petrol,1922,4,True,,6.83,True,97.7,15,42.5,11.83
+Mahindra XUV700,13,79749,Basic,4,0,24,Good,Not Available,Hybrid,1936,4,False,,6.66,False,99.9,20,45.9,15.66
+Kia Sonet,12,95271,Full,5,4,9,Good,Available,Petrol,1021,3,False,,5.84,False,84.9,9,60.1,14.45
+Toyota Urban Cruiser,10,100945,Transmission,3,5,12,Poor,Available,Petrol,1752,4,False,,6.64,True,83.5,2,54.0,25.94
+Ford Endeavour,9,112037,Engine Repair,1,0,17,Good,Available,Petrol,1454,4,False,,5.7,True,91.1,14,45.1,17.58
+Mahindra Scorpio,5,7373,Electrical,4,0,22,Good,Available,Petrol,1758,4,False,,8.16,True,83.4,18,24.8,12.25
+Mahindra Bolero,1,243682,Basic,2,2,7,Average,Available,Hybrid,1817,4,False,,4.64,True,88.9,10,58.7,13.74
+Kia Seltos,11,27756,Full,2,3,5,Good,Available,Petrol,1654,4,False,,6.37,True,91.5,1,37.4,8.89
+Tata Altroz,0,88758,Basic,1,5,16,Average,Available,Petrol,889,3,False,,6.94,False,97.2,22,18.0,4.03
+Toyota Innova,2,31768,Basic,3,3,2,Good,Available,Petrol,1424,4,False,,7.01,True,88.8,5,12.8,7.4
+Honda WR-V,7,246479,Transmission,2,2,4,Average,Available,Petrol,1144,3,False,,3.12,True,92.4,3,77.6,36.08
+Tata Harrier,10,158262,Basic,2,1,22,Good,Available,Diesel,1986,4,True,,5.14,True,88.0,19,61.5,11.49
+Toyota Glanza,5,182361,Transmission,1,1,18,Good,Available,Petrol,1297,4,False,,4.22,True,96.4,20,56.8,28.63
+Skoda Slavia,12,102349,Basic,2,5,20,Average,Available,Hybrid,2410,6,False,,5.68,False,99.2,11,53.7,6.78
+Honda Jazz,6,205283,Basic,1,2,13,Good,Available,Petrol,1576,4,True,,4.93,True,101.6,8,64.6,10.08
+Ford Endeavour,3,61741,Transmission,2,4,15,Good,Available,Petrol,1414,4,False,,6.34,False,97.9,2,35.7,32.76
+Kia Carnival,10,174270,Basic,0,5,4,Poor,Available,Hybrid,2002,6,False,,4.03,True,90.0,6,67.9,10.64
+Hyundai i20,3,43813,Full,1,0,24,Good,Available,Petrol,1529,4,False,,7.69,True,89.4,9,23.0,4.79
+Mahindra Thar,0,228039,Basic,3,1,11,Average,Limited,Diesel,2530,4,False,,3.71,False,94.1,7,60.8,12.55
+Tata Harrier,12,73593,Transmission,1,1,14,Average,Available,Hybrid,1777,4,False,,6.35,True,91.4,0,38.7,31.66
+Honda WR-V,9,122537,Basic,2,1,3,Average,Not Available,Petrol,1422,4,True,,4.94,True,97.9,0,56.5,12.84
+Ford Ecosport,11,203971,Basic,0,5,24,Good,Available,Petrol,1831,4,False,,3.6,False,91.7,10,70.2,6.81
+Maruti Suzuki Baleno,3,181125,Engine Repair,6,0,5,Average,Not Available,Electric,0,0,False,36.1,4.71,True,53.3,5,60.9,41.93
+Tata Tiago,6,10526,Full,2,4,3,Average,Available,Diesel,2465,6,False,,7.48,False,81.5,23,10.8,11.13
+Honda City,13,100344,Engine Repair,3,2,15,Average,Not Available,Diesel,2557,4,False,,5.69,True,91.6,19,53.2,24.69
+Tata Harrier,4,46730,Full,4,3,7,Poor,Available,Petrol,1690,4,False,,6.4,True,94.5,0,31.9,18.44
+Kia Carnival,9,182578,Full,2,4,6,Good,Limited,Hybrid,1690,4,False,,4.65,False,94.1,14,72.3,13.87
+Mahindra Bolero,9,59092,Transmission,2,4,2,Good,Not Available,Hybrid,1818,4,False,,6.0,True,90.0,9,30.1,55.66
+Skoda Slavia,2,221515,Full,5,4,3,Average,Available,Hybrid,1552,4,False,,3.93,True,92.2,15,72.2,22.76
+Skoda Kushaq,4,69935,Electrical,3,5,21,Average,Available,Diesel,1995,4,False,,5.47,True,97.1,6,40.4,17.45
+Volkswagen Taigun,10,211466,Engine Repair,2,0,22,Good,Limited,Petrol,1426,4,False,,4.7,True,91.3,12,63.6,18.08
+Ford Endeavour,14,188289,Full,4,5,19,Good,Available,Hybrid,2028,6,False,,3.98,True,81.1,17,80.6,19.71
+Kia Seltos,6,37537,Electrical,1,3,5,Good,Available,Hybrid,1438,4,False,,6.67,False,98.0,0,29.0,7.41
+Ford Aspire,14,247806,Transmission,2,2,5,Average,Not Available,Hybrid,2016,4,False,,3.43,True,89.8,8,94.7,88.81
+Toyota Innova,9,214235,Engine Repair,2,3,7,Average,Available,Diesel,2213,4,False,,3.48,False,94.4,6,75.6,21.47
+Skoda Rapid,3,182843,Basic,1,5,18,Good,Limited,Diesel,1896,4,False,,4.24,True,100.8,10,56.2,9.18
+Toyota Urban Cruiser,5,237049,Basic,1,2,7,Average,Limited,Hybrid,1856,4,True,,3.74,True,83.4,11,72.6,13.73
+Hyundai i20,11,121055,Basic,3,2,1,Good,Available,Petrol,1249,4,False,,5.37,False,92.8,3,58.8,8.86
+Volkswagen Vento,9,145350,Basic,2,0,1,Poor,Available,Petrol,1723,4,True,,4.79,True,90.4,13,54.8,11.31
+Skoda Kushaq,6,231095,Transmission,4,1,6,Average,Available,Petrol,1561,4,False,,4.36,False,95.2,0,80.4,17.97
+Maruti Suzuki Swift,0,14945,Basic,5,2,21,Good,Limited,Petrol,1684,4,False,,6.81,True,94.6,6,18.3,9.7
+Kia Seltos,0,90857,Painting,4,4,13,Good,Available,Diesel,1595,4,False,,6.48,True,92.8,3,37.5,47.48
+Ford Aspire,8,238893,Basic,0,2,4,Good,Available,Diesel,2129,4,False,,4.74,False,84.3,14,67.0,8.19
+Toyota Urban Cruiser,7,156994,Basic,3,1,2,Average,Available,Electric,0,0,False,53.1,5.21,True,52.9,6,61.6,13.9
+Skoda Kushaq,7,188773,Basic,1,1,1,Good,Available,Petrol,1635,4,False,,3.99,True,95.2,16,63.5,9.8
+Honda Amaze,4,66981,Painting,3,3,1,Good,Available,Petrol,1258,4,False,,6.21,False,91.1,9,31.2,45.47
+Maruti Suzuki Swift,11,95737,Basic,4,1,1,Average,Limited,Diesel,1867,4,False,,5.24,True,90.8,16,51.6,12.7
+Volkswagen Polo,10,184046,Full,2,4,22,Good,Limited,Hybrid,1387,4,False,,4.43,True,86.2,14,71.8,14.86
+Maruti Suzuki Celerio,6,86438,Full,2,3,15,Good,Available,Hybrid,1574,4,True,,5.74,False,90.9,9,48.0,13.37
+Hyundai i20,3,59501,Painting,2,1,8,Good,Available,Hybrid,1848,4,False,,6.42,True,84.0,10,24.0,39.88
+Ford Figo,5,9031,Electrical,3,3,22,Good,Available,Petrol,1116,3,False,,7.4,False,93.9,9,15.5,9.98
+Honda City,7,210489,Basic,2,4,15,Average,Limited,Petrol,1204,4,False,,5.17,False,88.5,3,57.6,10.77
+Tata Tiago,2,49555,Basic,1,1,16,Average,Available,Diesel,2817,6,False,,7.12,True,91.9,18,30.4,5.33
+Maruti Suzuki Swift,2,207873,Basic,1,1,5,Good,Available,Petrol,1531,4,False,,4.4,False,99.7,8,58.6,6.5
+Honda City,7,239161,Basic,2,2,19,Average,Available,Petrol,1771,4,False,,4.74,False,87.3,18,73.3,9.55
+Tata Nexon,0,196280,Engine Repair,3,0,8,Average,Available,Petrol,1040,3,False,,4.92,True,91.4,11,53.9,26.84
+Toyota Innova,11,154492,Engine Repair,3,4,2,Average,Available,Hybrid,1693,4,False,,4.72,True,93.4,18,68.0,29.51
+Volkswagen Polo,7,205514,Engine Repair,4,4,5,Good,Limited,Electric,0,0,False,45.0,3.85,False,51.2,14,65.5,30.0
+Kia Sonet,9,9236,Full,0,0,5,Average,Available,Hybrid,1005,3,False,,7.09,False,87.6,4,28.4,4.17
+Maruti Suzuki Dzire,8,220023,Electrical,3,3,4,Good,Available,Petrol,1682,4,False,,3.24,True,90.2,7,72.0,16.11
+Maruti Suzuki Baleno,12,236489,Transmission,3,5,2,Good,Not Available,Petrol,1301,4,False,,3.64,True,87.3,19,87.5,50.6
+Mahindra Bolero,12,208203,Full,5,3,7,Good,Limited,Petrol,1960,4,False,,3.84,True,87.9,20,88.7,19.78
+Honda WR-V,14,86981,Electrical,1,5,20,Average,Available,Diesel,1629,4,False,,5.91,False,86.7,15,51.4,4.82
+Hyundai Venue,10,194549,Basic,1,3,23,Poor,Available,Petrol,997,3,False,,4.44,True,96.0,23,63.0,8.38
+Toyota Fortuner,13,208903,Transmission,1,5,18,Average,Available,Petrol,1637,4,False,,3.61,True,87.6,20,76.2,24.65
+Tata Altroz,11,127987,Electrical,2,5,19,Good,Available,Petrol,1645,4,False,,4.71,True,90.2,11,56.3,11.99
+Maruti Suzuki Swift,2,229867,Full,4,4,20,Good,Not Available,Petrol,1792,4,True,,4.32,True,86.9,9,72.5,19.38
+Tata Harrier,2,218533,Full,3,3,22,Good,Limited,Petrol,1633,4,False,,4.31,True,86.6,2,61.5,14.59
+Toyota Glanza,13,73682,Full,1,2,5,Good,Available,Petrol,2005,4,True,,6.29,False,94.3,5,42.9,9.36
+Mahindra Scorpio,1,195411,Basic,3,4,3,Poor,Available,Diesel,2520,4,False,,5.18,False,95.6,23,54.0,12.96
+Volkswagen Taigun,6,235572,Engine Repair,2,1,11,Good,Available,Diesel,1782,4,False,,3.67,True,92.2,0,82.2,24.66
+Tata Tiago,4,192253,Basic,2,3,5,Average,Limited,Petrol,1309,4,False,,4.6,False,93.5,13,58.6,9.77
+Toyota Urban Cruiser,8,29062,Basic,1,2,16,Good,Not Available,Diesel,2514,4,False,,7.29,True,87.6,3,28.8,7.5
+Tata Harrier,1,249632,Transmission,3,0,10,Poor,Available,Petrol,1592,4,False,,3.59,True,100.6,4,72.4,34.88
+Mahindra Scorpio,0,45118,Full,2,2,3,Good,Available,Diesel,2195,6,False,,7.85,True,97.9,12,17.4,8.55
+Tata Nexon,3,106034,Painting,1,5,21,Poor,Available,Diesel,2557,6,True,,4.99,True,91.4,7,40.7,46.96
+Ford Endeavour,6,198363,Transmission,0,2,18,Good,Not Available,Petrol,1455,4,False,,4.46,False,90.1,9,55.2,32.75
+Honda City,12,116812,Painting,4,3,1,Good,Available,Diesel,1736,4,False,,5.61,True,100.1,8,64.3,43.36
+Tata Harrier,10,239335,Basic,2,2,22,Good,Available,Diesel,2542,4,False,,4.21,True,91.4,18,88.4,12.04
+Mahindra XUV700,9,14786,Engine Repair,1,0,24,Good,Available,Petrol,1204,4,False,,7.76,False,82.7,5,32.2,14.79
+Maruti Suzuki Swift,1,85864,Basic,5,1,13,Average,Not Available,Diesel,1760,4,False,,5.58,False,88.5,4,36.4,15.31
+Honda WR-V,1,249504,Basic,3,3,5,Good,Available,Petrol,1109,3,False,,4.08,True,96.6,3,69.9,14.9
+Honda WR-V,4,205920,Basic,1,1,13,Average,Available,Diesel,2684,6,False,,4.9,False,94.9,16,52.2,7.45
+Tata Harrier,2,105915,Full,2,3,10,Poor,Available,Diesel,1849,4,True,,6.54,False,95.2,11,41.3,13.63
+Toyota Innova,9,16810,Basic,4,1,2,Good,Not Available,Hybrid,1991,4,False,,7.52,False,95.9,11,28.8,12.27
+Hyundai Venue,13,41518,Basic,4,0,20,Good,Limited,Diesel,2615,6,False,,4.81,False,93.0,4,53.3,5.1
+Maruti Suzuki Baleno,0,248534,Basic,2,4,19,Good,Limited,Diesel,1624,4,False,,4.09,True,98.6,5,62.9,13.76
+Maruti Suzuki Celerio,13,116413,Full,0,1,16,Good,Available,Petrol,1326,4,False,,5.39,False,87.7,22,60.3,6.24
+Tata Tiago,12,100190,Engine Repair,1,4,7,Average,Available,Diesel,1745,4,False,,5.51,True,87.6,7,44.9,17.2
+Honda City,10,196558,Full,0,5,20,Average,Available,Petrol,1859,4,False,,3.66,True,83.1,19,78.1,11.9
+Volkswagen Vento,9,119280,Basic,2,2,12,Good,Limited,Diesel,1735,4,False,,5.43,True,95.8,12,48.3,8.64
+Kia Carens,14,15143,Full,0,0,17,Average,Available,Hybrid,1749,4,False,,6.39,False,94.3,12,38.4,3.1
+Maruti Suzuki Celerio,4,237517,Engine Repair,1,3,21,Good,Available,Petrol,1543,4,False,,3.57,True,87.5,5,67.9,23.65
+Skoda Rapid,14,139298,Engine Repair,0,2,11,Good,Available,Hybrid,1471,4,False,,4.93,True,91.9,6,68.5,17.51
+Mahindra Scorpio,10,85874,Basic,1,5,23,Good,Available,Petrol,1569,4,False,,6.16,False,93.1,16,46.9,5.73
+Tata Tiago,13,218778,Full,3,3,16,Average,Available,Electric,0,0,False,77.3,3.71,True,54.2,1,81.2,12.63
+Maruti Suzuki Dzire,1,65646,Transmission,0,5,3,Good,Available,Petrol,1804,4,False,,7.22,False,95.3,19,28.8,22.98
+Kia Carens,5,10375,Transmission,0,2,1,Poor,Available,Diesel,2370,6,False,,7.68,True,98.3,6,10.3,16.83
+Mahindra Scorpio,12,212384,Basic,1,0,14,Good,Available,Hybrid,2188,4,False,,3.41,True,93.7,3,91.9,8.93
+Kia Carens,2,33848,Engine Repair,2,5,23,Average,Available,Petrol,1846,4,False,,7.61,True,93.3,20,11.8,19.11
+Honda Jazz,7,201915,Basic,4,4,16,Poor,Available,Petrol,1589,4,False,,4.35,True,91.3,7,81.1,17.86
+Volkswagen Vento,10,14833,Full,3,5,2,Average,Not Available,Petrol,1390,4,True,,7.31,True,94.2,16,34.8,19.3
+Skoda Rapid,13,239302,Full,1,1,15,Average,Available,Petrol,1526,4,True,,3.7,True,92.9,23,82.8,14.77
+Maruti Suzuki Celerio,8,103142,Painting,2,5,23,Good,Available,Diesel,2707,4,False,,5.92,False,77.3,20,45.4,29.98
+Volkswagen Taigun,9,195590,Engine Repair,2,4,17,Average,Available,Diesel,2188,4,False,,4.41,False,91.5,13,66.8,19.12
+Mahindra XUV700,14,211518,Transmission,4,5,22,Good,Available,Hybrid,1154,3,False,,2.9,True,95.6,6,92.7,40.99
+Toyota Urban Cruiser,3,78990,Electrical,2,5,9,Good,Available,Petrol,1446,4,False,,6.51,True,84.5,21,39.4,12.3
+Toyota Urban Cruiser,11,76601,Engine Repair,3,4,6,Poor,Available,Petrol,1464,4,False,,6.11,True,89.7,7,44.4,29.76
+Honda WR-V,4,37305,Electrical,2,5,19,Good,Available,Hybrid,1183,3,False,,7.22,True,87.7,7,31.5,13.79
+Kia Seltos,2,43506,Basic,1,1,7,Average,Available,Petrol,1423,4,False,,7.2,False,98.0,4,20.3,5.01
+Volkswagen Polo,4,198940,Engine Repair,4,0,6,Good,Available,Diesel,2302,4,False,,4.23,True,86.4,20,68.0,20.28
+Mahindra Bolero,6,96780,Electrical,0,2,20,Good,Available,Petrol,1719,4,False,,5.83,False,95.0,7,40.5,5.79
+Volkswagen Vento,10,42048,Painting,1,4,7,Average,Limited,Petrol,1518,4,False,,6.3,False,83.5,6,38.1,58.42
+Tata Harrier,4,133365,Engine Repair,3,5,23,Good,Not Available,Petrol,1417,4,False,,5.3,False,91.8,20,51.6,36.25
+Kia Seltos,3,23976,Full,0,2,1,Poor,Available,Diesel,2132,4,False,,7.7,True,97.4,5,12.2,10.08
+Ford Aspire,2,145004,Basic,0,2,20,Good,Available,Hybrid,2073,6,True,,6.46,True,91.6,9,33.7,7.57
+Hyundai Verna,1,234156,Engine Repair,2,0,6,Average,Not Available,Electric,0,0,False,52.7,3.28,True,59.2,23,64.1,31.8
+Kia Seltos,9,10383,Transmission,2,1,17,Average,Not Available,Diesel,1634,4,True,,6.64,True,92.7,6,33.8,44.27
+Ford Aspire,7,203142,Basic,3,2,20,Good,Available,Diesel,1623,4,False,,4.13,True,104.3,5,70.1,10.08
+Toyota Fortuner,1,127511,Transmission,2,0,22,Average,Available,Electric,0,0,False,73.8,6.7,False,58.8,20,46.3,22.47
+Honda Amaze,13,127346,Basic,1,0,2,Average,Available,Petrol,1309,4,False,,4.14,True,93.2,11,60.2,9.57
+Tata Nexon,4,127392,Transmission,4,1,18,Good,Limited,Petrol,1588,4,False,,5.08,True,87.9,23,49.0,38.2
+Mahindra Thar,0,74350,Basic,1,1,12,Good,Available,Petrol,1533,4,False,,7.08,False,94.7,6,37.1,4.07
+Toyota Innova,1,48416,Engine Repair,0,4,14,Good,Available,Hybrid,2107,4,False,,8.07,True,92.3,9,6.9,16.72
+Mahindra Thar,4,66699,Full,3,5,18,Good,Available,Diesel,1720,4,True,,6.17,False,90.2,5,22.9,11.88
+Kia Carnival,10,230830,Basic,2,0,17,Average,Available,Petrol,1691,4,False,,4.25,False,97.0,2,76.6,7.96
+Maruti Suzuki Baleno,0,23051,Full,0,4,5,Good,Not Available,Diesel,2411,6,False,,8.81,True,91.2,15,2.8,10.47
+Ford Ecosport,3,53813,Full,2,0,4,Average,Available,Petrol,1268,4,False,,7.33,True,94.1,7,17.5,8.26
+Maruti Suzuki Dzire,7,7264,Painting,3,1,14,Poor,Available,Diesel,2244,4,False,,7.92,False,98.4,0,23.8,53.25
+Ford Endeavour,3,136459,Painting,2,3,18,Good,Limited,Petrol,1156,3,True,,6.55,True,92.6,15,41.3,47.72
+Kia Carens,10,160666,Full,5,5,9,Poor,Limited,Petrol,1452,4,False,,5.63,True,97.2,15,56.2,26.71
+Ford Figo,6,72950,Transmission,2,5,3,Average,Not Available,Hybrid,1512,4,False,,6.15,False,103.1,11,33.7,50.53
+Ford Endeavour,0,222791,Full,2,1,15,Good,Available,Petrol,1341,4,False,,3.93,True,96.2,10,59.3,10.32
+Mahindra Bolero,13,198149,Full,0,2,20,Poor,Limited,Diesel,2290,6,False,,2.95,True,83.9,0,69.6,13.67
+Honda Amaze,2,82110,Transmission,2,1,5,Average,Available,Diesel,1427,4,False,,6.75,False,93.5,13,34.1,19.45
+Volkswagen Vento,1,89276,Engine Repair,1,3,5,Good,Available,Petrol,1296,4,False,,6.88,False,87.8,8,33.2,14.26
+Toyota Fortuner,10,14778,Basic,2,1,1,Good,Available,Petrol,1552,4,False,,6.83,False,78.8,12,33.2,4.85
+Ford Aspire,1,204998,Full,2,1,21,Good,Available,Diesel,2416,4,True,,4.79,True,90.0,11,55.7,12.21
+Toyota Urban Cruiser,2,123871,Engine Repair,1,5,1,Good,Available,Petrol,1227,4,False,,6.14,False,93.6,13,47.1,19.21
+Honda City,13,181200,Engine Repair,1,0,15,Average,Limited,Hybrid,1712,4,False,,4.6,True,100.9,16,71.5,27.55
+Ford Ecosport,4,60275,Basic,1,2,9,Poor,Available,Petrol,1753,4,False,,7.0,True,89.9,5,21.1,6.13
+Kia Carnival,8,185021,Transmission,1,0,10,Good,Available,Petrol,1632,4,False,,4.04,False,94.0,3,64.1,34.36
+Hyundai i20,7,49451,Basic,1,2,24,Average,Available,Diesel,1941,4,True,,7.58,False,99.7,8,37.0,4.82
+Maruti Suzuki Baleno,8,147141,Basic,2,4,2,Average,Available,Hybrid,1641,4,False,,5.17,True,89.6,10,53.1,14.08
+Toyota Glanza,6,200790,Electrical,2,4,13,Good,Available,Diesel,1551,4,False,,4.66,True,89.3,18,63.1,13.71
+Skoda Slavia,3,40799,Transmission,4,4,16,Good,Available,Hybrid,1815,4,False,,6.85,False,91.8,17,32.1,31.06
+Hyundai i20,8,225606,Transmission,1,3,24,Poor,Limited,Petrol,1241,4,False,,3.7,False,88.5,8,67.5,36.51
+Maruti Suzuki Dzire,4,26827,Full,1,4,10,Good,Available,Diesel,2042,4,True,,6.87,True,82.4,17,23.4,9.5
+Maruti Suzuki Celerio,8,219320,Basic,3,1,2,Good,Available,Diesel,1932,4,False,,4.01,True,97.5,6,78.3,13.69
+Mahindra Scorpio,10,206120,Transmission,3,4,16,Average,Available,Hybrid,1896,4,False,,3.95,True,102.2,20,75.1,31.96
+Honda Amaze,7,73244,Electrical,2,3,17,Good,Available,Petrol,1538,4,False,,6.7,False,91.8,4,36.6,12.15
+Ford Aspire,8,32103,Electrical,1,5,12,Average,Available,Petrol,1351,4,False,,6.34,False,95.7,8,22.6,11.87
+Skoda Rapid,11,64462,Basic,1,4,3,Average,Not Available,Petrol,1579,4,False,,6.16,False,84.2,10,41.8,9.22
+Toyota Urban Cruiser,11,161381,Basic,4,1,2,Poor,Available,Diesel,2267,4,True,,4.0,True,100.9,1,74.2,13.17
+Kia Seltos,5,131676,Engine Repair,2,0,12,Poor,Available,Diesel,1761,4,False,,5.36,False,95.7,4,49.0,21.43
+Ford Figo,9,22902,Engine Repair,1,4,5,Average,Available,Hybrid,2108,4,False,,6.76,False,87.1,8,30.9,20.53
+Kia Seltos,6,169911,Full,3,2,17,Average,Not Available,Petrol,1588,4,False,,5.47,True,87.4,15,69.9,18.31
+Toyota Glanza,12,91478,Full,3,0,8,Good,Limited,Diesel,2582,4,True,,5.19,False,93.2,11,46.0,10.38
+Skoda Slavia,14,183304,Engine Repair,2,1,22,Average,Available,Petrol,1811,4,False,,4.05,True,94.4,19,80.6,19.67
+Maruti Suzuki Celerio,11,92839,Basic,1,2,23,Good,Limited,Hybrid,1316,4,False,,6.11,False,89.9,3,39.5,4.97
+Volkswagen Polo,14,93567,Electrical,5,1,10,Good,Available,Hybrid,2145,4,False,,5.05,False,101.3,6,64.6,17.74
+Toyota Glanza,10,80945,Full,3,3,1,Average,Available,Petrol,1400,4,False,,5.4,False,97.0,23,46.5,10.63
+Mahindra XUV700,8,189742,Full,0,5,2,Average,Limited,Diesel,1635,4,False,,4.19,False,97.5,2,67.7,12.53
+Maruti Suzuki Swift,4,21624,Transmission,2,2,10,Average,Available,Petrol,1601,4,False,,7.23,True,94.4,11,19.7,23.47
+Skoda Rapid,8,93387,Painting,4,0,5,Average,Available,Petrol,1404,4,False,,5.87,True,99.2,13,43.2,43.47
+Hyundai i20,9,132714,Full,2,4,15,Good,Not Available,Hybrid,1919,4,False,,5.03,True,90.6,7,62.5,17.72
+Mahindra Bolero,12,16595,Full,1,5,14,Good,Available,Petrol,1135,3,False,,7.24,False,97.6,8,31.8,6.74
+Maruti Suzuki Celerio,1,93390,Basic,0,4,20,Poor,Available,Petrol,1172,3,False,,6.94,False,100.0,22,26.5,2.51
+Ford Figo,11,217473,Electrical,4,4,10,Average,Available,Petrol,1703,4,False,,4.21,True,97.0,13,73.9,19.53
+Toyota Fortuner,10,195237,Full,4,3,14,Good,Limited,Petrol,1462,4,False,,3.43,True,93.6,5,81.9,15.35
+Toyota Innova,2,39884,Full,4,1,10,Average,Available,Diesel,1937,4,False,,6.52,True,89.1,19,21.7,12.57
+Kia Carnival,0,107345,Painting,2,2,23,Average,Limited,Diesel,2542,6,False,,5.04,True,92.5,12,41.9,56.27
+Toyota Innova,11,115649,Transmission,1,0,16,Good,Available,Petrol,1279,4,True,,6.09,True,86.9,13,49.6,14.63
+Hyundai Verna,14,105469,Transmission,2,4,23,Good,Available,Petrol,1568,4,True,,5.69,True,85.5,4,65.8,22.98
+Toyota Urban Cruiser,2,202497,Basic,3,3,14,Good,Available,Diesel,1418,4,False,,5.25,True,95.0,14,63.2,12.61
+Hyundai Creta,5,189134,Full,0,0,6,Good,Available,Petrol,1498,4,False,,4.41,True,93.2,21,59.1,8.49
+Maruti Suzuki Swift,1,61251,Full,4,0,22,Good,Limited,Petrol,1465,4,False,,7.0,False,86.1,9,23.3,8.33
+Tata Harrier,6,180829,Basic,1,0,9,Good,Not Available,Petrol,1591,4,False,,4.13,True,93.6,6,63.6,10.37
+Mahindra Bolero,12,27606,Basic,2,4,9,Average,Available,Petrol,1303,4,False,,6.29,True,99.3,21,31.6,8.27
+Kia Carnival,13,244592,Engine Repair,2,1,5,Poor,Limited,Hybrid,2111,4,False,,3.8,False,92.4,17,84.2,33.8
+Mahindra XUV700,10,78415,Engine Repair,1,2,8,Good,Available,Petrol,1111,3,False,,6.12,False,98.1,1,46.5,20.0
+Kia Carnival,6,36389,Basic,2,5,4,Good,Limited,Petrol,1258,4,False,,7.54,False,85.2,23,25.9,8.42
+Mahindra XUV700,14,34992,Engine Repair,2,1,17,Average,Available,Electric,0,0,False,52.9,5.98,True,54.5,9,44.1,17.57
+Hyundai i20,14,116079,Engine Repair,6,5,20,Average,Available,Diesel,1925,4,False,,5.63,False,96.4,17,70.0,22.75
+Tata Tiago,12,114712,Full,3,4,3,Poor,Limited,Petrol,1727,4,False,,5.4,True,97.4,6,54.7,16.69
+Tata Altroz,7,229792,Basic,2,5,3,Poor,Not Available,Petrol,1684,4,True,,3.37,True,93.3,22,64.2,21.79
+Kia Carens,2,57781,Basic,3,5,18,Good,Limited,Petrol,1649,4,False,,6.63,False,89.2,8,20.8,5.6
+Honda Amaze,13,80750,Engine Repair,2,3,14,Good,Available,Diesel,2396,6,False,,4.81,False,96.5,7,46.6,17.78
+Tata Nexon,1,126579,Full,2,1,20,Poor,Available,Hybrid,2128,4,False,,5.3,True,95.3,20,31.0,11.22
+Volkswagen Vento,12,199417,Basic,1,2,6,Average,Available,Petrol,1097,3,False,,3.56,True,93.7,20,78.4,11.47
+Kia Sonet,5,241992,Engine Repair,3,3,14,Good,Available,Petrol,1465,4,False,,4.21,True,85.9,17,73.0,21.28
+Tata Tiago,13,142768,Basic,2,3,19,Good,Available,Petrol,1523,4,False,,4.68,False,86.4,2,58.5,6.55
+Ford Ecosport,5,83664,Basic,2,3,20,Good,Available,Diesel,3146,6,False,,6.22,False,97.1,9,45.8,6.14
+Kia Carnival,2,37324,Engine Repair,2,5,21,Good,Available,Hybrid,1770,4,False,,8.07,True,89.6,7,22.0,18.27
+Tata Harrier,3,167600,Basic,1,5,3,Average,Available,Petrol,1490,4,False,,5.43,False,100.1,13,55.9,9.32
+Skoda Kushaq,0,84785,Painting,2,5,14,Poor,Available,Petrol,1477,4,False,,6.92,True,83.4,19,33.7,32.66
+Mahindra Thar,6,110583,Full,2,0,2,Poor,Available,Diesel,2545,4,True,,5.49,True,91.4,12,36.9,16.23
+Ford Figo,11,239593,Basic,3,4,4,Average,Limited,Petrol,1428,4,False,,3.69,True,90.5,16,89.8,17.05
+Kia Sonet,8,40772,Basic,2,3,24,Average,Available,Petrol,1493,4,False,,7.64,False,89.4,0,26.7,5.8
+Toyota Fortuner,12,28472,Engine Repair,1,3,20,Average,Available,Diesel,1777,4,False,,6.73,True,96.9,17,27.9,18.21
+Skoda Kushaq,10,73052,Basic,0,0,5,Average,Limited,Diesel,1733,4,False,,6.24,True,92.6,12,33.1,5.91
+Tata Altroz,0,175464,Basic,2,4,1,Good,Limited,Hybrid,1523,4,False,,5.66,True,86.4,16,45.2,13.31
+Tata Harrier,3,9099,Full,4,4,5,Average,Available,Diesel,1996,4,True,,7.8,False,102.1,0,19.2,14.77
