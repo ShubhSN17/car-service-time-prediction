@@ -1,0 +1,244 @@
+/* =========================
+🌟 GLOBAL STYLING & TYPOGRAPHY
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Manrope', 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f0faff, #e0f7ff, #e8f0ff);
+  background-size: 300% 300%;
+  animation: bgFlow 10s ease infinite;
+  color: #1a1a1a;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  letter-spacing: 0.2px;
+  line-height: 1.6;
+}
+
+@keyframes bgFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* =========================
+💎 CARD / CONTAINER DESIGN
+========================= */
+.card, .container {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 120, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 28px 36px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.card:hover, .container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(0, 120, 255, 0.25);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+🔹 HEADINGS
+========================= */
+.heading, h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #0078ff, #00c2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px rgba(0, 200, 255, 0.3); }
+  100% { text-shadow: 0 0 25px rgba(0, 200, 255, 0.7); }
+}
+
+/* =========================
+📋 LABELS & INPUTS
+========================= */
+label {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  color: #004f8a;
+  letter-spacing: 0.3px;
+}
+
+input, select {
+  font-family: 'Poppins', sans-serif;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid #b8e1ff;
+  border-radius: 10px;
+  padding: 10px;
+  color: #004f8a;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #0078ff;
+  box-shadow: 0 0 10px rgba(0, 120, 255, 0.35);
+  transform: scale(1.02);
+}
+
+/* =========================
+🚀 BUTTONS
+========================= */
+.btn-primary {
+  background: linear-gradient(90deg, #0078ff, #00c2ff);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 12px 25px;
+  font-size: 1.05rem;
+  box-shadow: 0 8px 25px rgba(0, 120, 255, 0.25);
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00c2ff, #0078ff);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 120, 255, 0.4);
+}
+
+.btn-light {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  background-color: #fff;
+  color: #0078ff;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(0, 120, 255, 0.15);
+}
+
+.btn-light:hover {
+  background-color: #0078ff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 120, 255, 0.3);
+}
+
+/* =========================
+💬 RESULT BOX
+========================= */
+.result-box {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 120, 255, 0.2);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: #0078ff;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  box-shadow: 0 6px 25px rgba(0, 120, 255, 0.2);
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+📊 DASHBOARD TABLE
+========================= */
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+}
+
+th {
+  background: linear-gradient(90deg, #0078ff, #00c2ff);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+td {
+  color: #004f8a;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f8ff;
+}
+
+tr:hover {
+  background: rgba(0, 120, 255, 0.08);
+  transform: scale(1.01);
+}
+
+/* =========================
+📈 DASHBOARD SUMMARY CARDS
+========================= */
+.summary-box {
+  background: linear-gradient(135deg, #ffffff, #eaf6ff);
+  border-radius: 14px;
+  color: #0078ff;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 120, 255, 0.15);
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s ease;
+}
+
+.summary-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 120, 255, 0.3);
+}
+
+.summary-box h5 {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #004f8a;
+}
+
+.summary-box p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0078ff;
+}
+
+/* =========================
+🌟 RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+}
