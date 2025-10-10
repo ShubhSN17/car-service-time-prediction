@@ -180,7 +180,7 @@ https://carservicetime.onrender.com/
 🎓 Final Year IT Engineering Student  
 💡 Passionate about AI, ML, and Web Development  
 📍 India  
-🔗 GitHub: [https://github.com/YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+🔗 GitHub: [https://github.com/ShubhSN17](https://github.com/ShubhSN17)
 
 ---
 
