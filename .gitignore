@@ -1,0 +1,41 @@
+# ===============================
+# 🧠 Python & Flask Project Ignore
+# ===============================
+
+# Virtual environments
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model files & encoders
+*.pkl
+*.sav
+
+# CSV output & data logs
+records.csv
+predicted_records.csv
+dashboard_chart.png
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Flask debug / cache
+instance/
+*.log
+*.pid
+
+# Environment configs
+.env
+.env.*
