@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import joblib
 import numpy as np
 import pandas as pd
 import os
 import matplotlib
-matplotlib.use('Agg')  # ✅ Prevent GUI crash on macOS
+matplotlib.use('Agg')  # ✅ Prevent GUI crash on Render/macOS
 import matplotlib.pyplot as plt
 
 app = Flask(__name__)
@@ -29,19 +29,29 @@ if not os.path.exists(record_file):
     ]).to_csv(record_file, index=False)
 
 
+# ==========================
+# 🏠 HOME PAGE
+# ==========================
 @app.route('/')
 def home():
     return render_template('index.html')
 
 
-@app.route('/predict', methods=['POST'])
+# ==========================
+# 🔮 PREDICTION ROUTE
+# ==========================
+@app.route('/predict', methods=['GET', 'POST'])
 def predict():
+    # Handle direct or refresh GET access gracefully
+    if request.method == 'GET':
+        return render_template('index.html')
+
     # --- read categorical fields (strings)
     car_name = request.form['car_name']
     service_type = request.form['service_type']
     engine_type = request.form['engine_type']
 
-    # --- helper to parse numbers and handle checkboxes/strings
+    # --- helper functions
     def to_float(val, default=0.0):
         try:
             return float(val)
@@ -49,14 +59,14 @@ def predict():
             return default
 
     def to_int(val, default=0):
-        if isinstance(val, str) and val.lower() in ('on','true','yes'):
+        if isinstance(val, str) and val.lower() in ('on', 'true', 'yes'):
             return 1
         try:
             return int(float(val))
         except:
             return default
 
-    # --- parse numeric fields IN THE SAME ORDER as X_df.columns used during training
+    # --- parse numeric fields
     car_age = to_float(request.form.get('car_age', 0))
     mileage = to_float(request.form.get('mileage', 0))
     parts_to_replace = to_float(request.form.get('parts_to_replace', 0))
@@ -96,10 +106,9 @@ def predict():
 
     X_input = np.concatenate([numeric_data, car_encoded, service_encoded, engine_encoded], axis=1)
 
-        # --- Predict (improved with realistic minimums)
+    # --- Predict (with realistic minimums)
     raw_pred = model.predict(X_input)[0]
 
-    # Context-based minimum time by service type
     service_min = {
         "Basic": 0.5,
         "Full": 2.0,
@@ -108,11 +117,10 @@ def predict():
         "Electrical": 1.5,
         "Painting": 3.0
     }
-
     MIN_SERVICE_TIME = service_min.get(service_type, 1.0)
     prediction = max(raw_pred, MIN_SERVICE_TIME)
 
-    # ✅ --- Save prediction record (only once) ---
+    # ✅ --- Save prediction record ---
     header = [
         "Car Name", "Service Type", "Engine Type", "Condition",
         "Spare Parts", "Turbocharged", "Check Engine Light",
@@ -121,28 +129,29 @@ def predict():
         "Months Since Last Service", "Predicted Time (hours)"
     ]
 
-    file_exists = os.path.isfile(record_file)
-    with open(record_file, 'a', newline='') as f:
-        writer = pd.DataFrame([[
-            car_name, service_type, engine_type, condition, parts_avail,
-            turbo, check_light, mileage, car_age, engine_capacity, engine_wear,
-            oil_quality, temp, service_months, round(prediction, 2)
-        ]], columns=header)
-        writer.to_csv(f, header=not file_exists, index=False)
+    pd.DataFrame([[
+        car_name, service_type, engine_type, condition, parts_avail,
+        turbo, check_light, mileage, car_age, engine_capacity, engine_wear,
+        oil_quality, temp, service_months, round(prediction, 2)
+    ]], columns=header).to_csv(record_file, mode='a', header=not os.path.isfile(record_file), index=False)
 
     print("✅ Prediction logged successfully!")
 
-    return render_template('index.html', prediction_text=f"Estimated Service Time: {prediction:.2f} hours")
+    return render_template(
+        'index.html',
+        prediction_text=f"Estimated Service Time: {prediction:.2f} hours"
+    )
 
 
+# ==========================
+# 📊 DASHBOARD ROUTE
+# ==========================
 @app.route('/dashboard')
 def dashboard():
     if not os.path.exists(record_file):
         return render_template('dashboard.html', tables=None, msg="No records found yet. Predict some results first!")
 
     df = pd.read_csv(record_file)
-
-    # Convert numeric just in case
     df["Predicted Time (hours)"] = pd.to_numeric(df["Predicted Time (hours)"], errors='coerce')
 
     avg_time = round(df["Predicted Time (hours)"].mean(), 2)
@@ -159,13 +168,18 @@ def dashboard():
     plt.savefig(chart_path)
     plt.close()
 
-    return render_template("dashboard.html",
-                           tables=df.tail(10).values.tolist(),
-                           avg_time=avg_time,
-                           common_car=common_car,
-                           total_records=total_records,
-                           chart=chart_path)
+    return render_template(
+        "dashboard.html",
+        tables=df.tail(10).values.tolist(),
+        avg_time=avg_time,
+        common_car=common_car,
+        total_records=total_records,
+        chart=chart_path
+    )
 
 
+# ==========================
+# 🚀 RUN APP
+# ==========================
 if __name__ == '__main__':
     app.run(debug=True)
